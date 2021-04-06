@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Prompt:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap");
+
+.firstContainer {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.tile-title {
+  font-size: 12px;
+  text-align: center;
+  margin: 1.5em;
+  font-weight: 800;
+  position: relative;
+  letter-spacing: 1px;
+}
+
+.HomeContainer {
+  background: linear-gradient(120deg, #30517a, #191414);
+  color: white;
+
+  font-family: "Prompt", sans-serif;
+}
+
+.HomeContainer h2 {
+  font-weight: 600;
+}
+
+.select-trends {
+  font-family: "Prompt", sans-serif;
+  font-weight: 600;
+  letter-spacing: 3px;
+  font-size: 10px;
+}
+.tile-card {
+  position: relative;
+}
+
+.tile-logo {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.tile-logo img {
+  height: 20px;
+}
