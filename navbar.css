@@ -1,0 +1,75 @@
+/* The sidebar menu */
+.sidenav {
+	height: 100%;
+	width: 250px;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #111;
+	overflow-x: hidden;
+	padding-top: 20px;
+}
+
+.sidenav a {
+	padding: 6px 8px 6px 16px;
+	text-decoration: none;
+	font-size: 22px;
+	color: #818181;
+	display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+	color: #f1f1f1;
+}
+
+.sidebar-logo {
+	width: 100%;
+	padding: 15px;
+}
+
+.sidebarIcon {
+	width: 30px;
+	height: 30px;
+}
+
+.bottomIcon {
+	width: 20px;
+	height: 20px;
+	margin: 10px;
+}
+
+.footer {
+	height: 100px;
+	background-color: #212121;
+	color: rgb(221, 221, 221);
+	padding: 10px 10px 0px 10px;
+	line-height: 0;
+	font-size: 12px;
+}
+
+.bottomLeft {
+	display: flex;
+	align-items: center;
+}
+
+.bottomMiddle {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 15px;
+}
+
+.bottomRight {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+@media only screen and (max-width: 768px) {
+	.sidenav {
+		width: 100px;
+	}
+	.sidenav a {
+		font-size: 8px;
+	}
+}
