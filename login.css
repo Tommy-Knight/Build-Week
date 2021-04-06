@@ -1,0 +1,105 @@
+.container-fluid {
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.header-n {
+  display: flex;
+  flex: center;
+  align-items: center;
+  justify-content: center;
+
+  margin: 15px;
+  padding: 10px;
+}
+
+.header-n img {
+  height: 60px;
+  margin-right: 5px;
+}
+
+.header-n h1 {
+  font-size: 40px;
+}
+
+.btn {
+  border-radius: 30px;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.hr-sect {
+  display: flex;
+  flex-basis: 100%;
+  align-items: center;
+  font-size: 12px;
+}
+.hr-sect::before,
+.hr-sect::after {
+  content: "";
+  flex-grow: 1;
+  background: rgba(0, 0, 0, 0.15);
+  height: 1px;
+  font-size: 0px;
+  line-height: 0px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.hr-sect::before {
+  margin-right: 25px;
+}
+.hr-sect::after {
+  margin-left: 25px;
+}
+
+#btn-fb-n,
+#btn-apple-n,
+#btn-login-n,
+#btn-signup-n {
+  padding: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+#btn-fb-n {
+  background: #45599a;
+  color: white;
+}
+
+#btn-apple-n {
+  background: black;
+  color: white;
+}
+i {
+  margin-right: 15px;
+}
+#btn-login-n {
+  background: #47b850;
+  color: white;
+}
+
+#btn-signup-n {
+  border: 2px solid black;
+}
+#p-first-n {
+  margin: 0;
+}
+
+#p-dont-n {
+  font-size: 1.2rem;
+  margin-top: 40px;
+}
+
+#p-last-n {
+  color: grey;
+  font-size: 0.8rem;
+}
+
+#a-forgot-n {
+  color: green !important;
+}
