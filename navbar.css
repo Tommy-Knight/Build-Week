@@ -72,6 +72,7 @@
 		width: 100px;
 	}
 	.sidenav a {
-		font-size: 8px;
+		font-size: 10px;
+		padding-left: 5px;
 	}
 }
