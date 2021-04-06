@@ -1,3 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  font-family: Montserrat, sans-serif;
+}
+
 .container-fluid {
   margin: 0 auto;
 }
@@ -100,6 +105,8 @@ i {
   font-size: 0.8rem;
 }
 
-#a-forgot-n {
+#a-forgot-n,
+#a-terms-n,
+#a-privacy-n {
   color: green !important;
 }
