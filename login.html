@@ -36,7 +36,7 @@
       <hr />
 
       <div class="container">
-        <div class="col-6 mt-3">
+        <div class="col-md-6 mt-3">
           <p id="p-first-n"><strong>To continue, login to Spotify</strong></p>
           <button class="btn" id="btn-fb-n">
             <i class="fab fa-facebook"></i>Continue with Facebook
@@ -61,14 +61,16 @@
             <br />
             <div class="row">
               <div class="col-6">
-                <input
-                  class="form-check-input m-0"
-                  type="checkbox"
-                  value="checkbox"
-                  id="checkbox-n"
-                  selected
-                />
-                <label for="checkbox">Rembemr Me</label>
+                <div class="checkbox float-left align-text-bottom">
+                  <label id="label-n"
+                    ><input
+                      type="checkbox"
+                      checked="checked"
+                      id="checkbox-n"
+                    />Remember Me
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
               </div>
               <div class="col-6">
                 <button class="btn" id="btn-login-n">LOG IN</button>

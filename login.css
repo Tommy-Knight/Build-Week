@@ -1,8 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-* {
-  font-family: Montserrat, sans-serif;
-}
-
 .container-fluid {
   margin: 0 auto;
 }
@@ -109,4 +104,85 @@ i {
 #a-terms-n,
 #a-privacy-n {
   color: green !important;
+}
+
+/* Customize the label (the container) */
+#label-n {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 14px;
+  color: grey;
+}
+
+/* Hide the browser's default checkbox */
+#label-n input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+  padding-top: 50px;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: rgb(177, 177, 177);
+  border-radius: 4px;
+}
+
+/* On mouse-over, add a grey background color */
+#label-n:hover input ~ .checkmark {
+  background-color: rgb(231, 231, 231);
+  border: solid black 1px;
+}
+
+/* When the checkbox is checked, add a blue background */
+#label-n input:checked ~ .checkmark {
+  background-color: green;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+#label-n input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+#label-n .checkmark:after {
+  left: 7px;
+  top: 1px;
+  width: 7px;
+  height: 12px;
+  border: solid#FFF;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+
+@media screen and (max-width: 340px) {
+  #btn-fb-n,
+  #btn-apple-n,
+  #btn-login-n,
+  #btn-signup-n {
+    font-size: 13px;
+  }
 }
