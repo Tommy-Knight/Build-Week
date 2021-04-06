@@ -33,13 +33,25 @@
 	width: 30px;
 	height: 30px;
 }
-
-.bottomIcon {
-	width: 20px;
-	height: 20px;
-	margin: 10px;
+.navFoot{
+	position:absolute;
+	bottom: 105px;
+	
 }
-
+.loginBtn{
+	width: 200px;
+	border: 3px solid rgb(201, 201, 201);
+	border-radius: 30px;
+	margin-left: 25px;
+	margin-bottom: 10px;
+	font-size: 16px!important;
+}
+.cookies{
+	display: flex!important;
+	justify-content: center;
+	font-size: 12px!important;
+	margin-left: 25px;
+}
 .footer {
 	height: 100px;
 	background-color: #212121;
@@ -47,7 +59,11 @@
 	padding: 10px 10px 0px 10px;
 	line-height: 0;
 	font-size: 10px;
-
+}
+.bottomIcon {
+	width: 20px;
+	height: 20px;
+	margin: 10px;
 }
 
 .bottomLeft {
@@ -74,5 +90,12 @@
 	.sidenav a {
 		font-size: 10px;
 		padding-left: 5px;
+	}
+	.loginBtn{
+		margin-left: 4px;
+		width: 90px;
+	}
+	.cookies{
+		display:none!important;
 	}
 }
