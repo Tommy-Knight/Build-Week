@@ -110,6 +110,9 @@
 	align-items: center;
 	justify-content: flex-end;
 }
+.songartist{
+	margin-left: 1px;
+}
 
 @media only screen and (max-width: 768px) {
 	.sidenav {
@@ -123,7 +126,7 @@
 	}
 	input[type="range"] {
 		position: fixed !important;
-		right: -10px;
+		right: -5px;
 		width: 80px !important;
 		transform: rotate(270deg);
 	}
