@@ -7,7 +7,7 @@ let tileTitle = document.querySelectorAll('.tile-title')
 for(let i=0; i<tileTitle.length;i++){
     let logoDiv = document.createElement('div')
     logoDiv.className = 'tile-logo'
-    logoDiv.innerHTML = `<i class="fab fa-spotify"></i>`
+    logoDiv.innerHTML = `<i class="fab fa-spotify testing"></i>`
     tileTitle[i].parentNode.insertBefore(logoDiv,tileTitle[i])
     
 }
@@ -19,7 +19,7 @@ insertLogo()
 
 
 //  Get the container element
-var btnContainer = document.getElementById("HomePageNav");
+/* var btnContainer = document.getElementById("HomePageNav");
 
 // Get all buttons with class="btn" inside the container
 var btns = btnContainer.getElementsByClassName("btn");
@@ -31,4 +31,4 @@ for (var i = 0; i < btns.length; i++) {
     current[0].className = current[0].className.replace(" active", "");
     this.className += " active";
   });
-}
+} */
