@@ -40,12 +40,12 @@
                         src="assets\images\icons\sidebar-home.png">
                     Home</a>
             </div>
-            <div class="smallnavicon"><a href="artist.html" class="smallnavicon"><img class="sidebarIcon"
+            <div class="smallnavicon"><a href="albumpage.html" class="smallnavicon"><img class="sidebarIcon"
                         src="assets\images\icons\sidebar-search.png">
                     Search</a>
             </div>
-            <div class="smallnavicon"><a href="index.html" class="smallnavicon"><img class="sidebarIcon"
-                        src="assets\images\icons\sidebar-library.png"> Your
+            <div class="smallnavicon"><a href="artist.html" class="smallnavicon"><img class="sidebarIcon"
+                        src="assets\images\icons\sidebar-library.png">
                     Library</a>
             </div>
         </div>
@@ -63,13 +63,13 @@
                         src="assets\images\icons\icons8-toggle-full-screen-96.png"></a>
             </div>
             <div class="col-8 col-md-9">
-                <div class="bottomMiddle"><a href=""><img src="assets\images\icons\icons8-shuffle-24.png" alt="Shuffle"
-                            class="bottomIcon d-none d-md-block"></a><a href=""><img src="assets\images\icons\icons8-rewind-52.png"
-                            alt="Rewind" class="bottomIcon"></a><a href=""><input type="image"
-                            src="assets\images\icons\icons8-circled-play-48.png" alt="Play Button"
-                            onmouseover="rick.play()" class=""></a><a href=""><img
+                <div class="bottomMiddle"><a href="#"><img src="assets\images\icons\icons8-shuffle-24.png" alt="Shuffle"
+                            class="bottomIcon d-none d-md-block"></a><a href="#"><img
+                            src="assets\images\icons\icons8-rewind-52.png" alt="Rewind" class="bottomIcon"></a><a
+                        href=""><input type="image" src="assets\images\icons\icons8-circled-play-48.png"
+                            alt="Play Button" onmouseover="rick.play()" class=""></a><a href="#"><img
                             src="assets\images\icons\icons8-fast-forward-52.png" alt="Forward" class="bottomIcon"></a><a
-                        href=""><img src="assets\images\icons\icons8-repeat-60.png" alt="Repeat"
+                        href="#"><img src="assets\images\icons\icons8-repeat-60.png" alt="Repeat"
                             class="bottomIcon d-none d-md-block"></a><br></div>
                 <div class="row bottomMiddle">
                     <div class="col-1 text-right mx-0">00:00</div>
@@ -86,9 +86,9 @@
 
             </div>
             <div class="col-1 bottomRight">
-                <a href=""><img src="assets\images\icons\icons8-playlist-32.png" alt=""
+                <a href="#"><img src="assets\images\icons\icons8-playlist-32.png" alt=""
                         class="bottomIcon d-none d-md-block hideicon"></a>
-                <a href=""><img src="assets\images\icons\icons8-subwoofer-48.png" alt=""
+                <a href="#"><img src="assets\images\icons\icons8-subwoofer-48.png" alt=""
                         class="bottomIcon d-none d-md-block hideicon">
                 </a><a href=""><img src="assets\images\icons\icons8-speaker-48.png" alt="" class=" bottomIcon"></a>
                 <input type="range" class="form-control-range d-none d-md-block " style="width: 100px;">
@@ -112,9 +112,7 @@
     <script>
         const rick = new Audio()
         rick.src = "rick.mp3"
-
-        var icon = document.getElementById('toggle')
-
+        const icon = document.getElementById('toggle')
         icon.addEventListener('click', (event) => {
             icon.querySelector(':last-child').classList.toggle("fa-heart")
         })
