@@ -10,6 +10,24 @@
 	overflow-x: hidden;
 	padding-top: 20px;
 }
+.smallnav{
+	position: absolute;
+	bottom: 0;
+	width:100%;
+	display:none;
+	text-align: center;
+	margin: 5px;
+}
+.smallnavicon{
+	display: inline;
+	color: grey;
+	margin: 5px;
+
+}
+.smallnavicon:hover {
+	color: #f1f1f1!important;
+	text-decoration: none;
+}
 
 .sidenav a {
 	padding: 6px 8px 6px 16px;
@@ -22,6 +40,9 @@
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
 	color: #f1f1f1;
+}
+.greenborder:hover{
+	border-left: 5px solid #1db954;
 }
 
 .sidebar-logo {
@@ -85,17 +106,12 @@
 
 @media only screen and (max-width: 768px) {
 	.sidenav {
-		width: 100px;
+		display: none;
 	}
-	.sidenav a {
-		font-size: 10px;
-		padding-left: 5px;
+	.smallnav{
+		display: block;
 	}
-	.loginBtn{
-		margin-left: 4px;
-		width: 90px;
-	}
-	.cookies{
-		display:none!important;
+	.footer{
+		height: 150px;
 	}
 }

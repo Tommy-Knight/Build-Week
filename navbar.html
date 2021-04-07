@@ -10,102 +10,36 @@
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="navbar.css">
     <title>Hello, world!</title>
-    <!-- <style>
-        /* The sidebar menu */
-        .sidenav {
-            height: 100%;
-            width: 250px;
-            position: fixed;
-            z-index: 1;
-            top: 0;
-            left: 0;
-            background-color: #111;
-            overflow-x: hidden;
-            padding-top: 20px;
-        }
-
-        .sidenav a {
-            padding: 6px 8px 6px 16px;
-            text-decoration: none;
-            font-size: 22px;
-            color: #818181;
-            display: block;
-        }
-
-        /* When you mouse over the navigation links, change their color */
-        .sidenav a:hover {
-            color: #f1f1f1;
-        }
-
-        body {
-            margin-left: 250px;
-            /* Same as the width of the sidebar */
-        }
-
-        .sidebar-logo {
-            width: 100%;
-            padding: 15px;
-        }
-
-        .sidebarIcon {
-            width: 30px;
-            height: 30px;
-        }
-
-        .bottomIcon {
-            width: 20px;
-            height: 20px;
-            margin: 10px;
-        }
-
-        .footer {
-            height: 100px;
-            background-color: #212121;
-            color: rgb(221, 221, 221);
-            padding: 10px 10px 0px 10px;
-            line-height: 0;
-            font-size: 12px;
-        }
-
-        .bottomLeft {
-            display: flex;
-            align-items: center;
-        }
-
-        .bottomMiddle {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 15px;
-        }
-
-        .bottomRight {
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-        }
-    </style> -->
 </head>
 
 <body>
-    <!-- <iframe src="./HomePage.html" width="100%" height="100%"
-        onload="this.before((this.contentDocument.body));this.remove()"></iframe> -->
-
     <!-- Side navigation -->
     <div class="sidenav">
         <div><img src="assets\images\icons\spotify-sidebar-logo.png" class="sidebar-logo">
-            <a href="login"><img class="sidebarIcon" src="assets\images\icons\sidebar-home.png"> Home</a>
-            <a href="artist.html"><img class="sidebarIcon" src="assets\images\icons\sidebar-search.png"> Search</a>
-            <a href="#"><img class="sidebarIcon" src="assets\images\icons\sidebar-library.png"> Your Library</a>
+            <a href="HomePage.html" class="greenborder homeGreen"><img class="sidebarIcon" src="assets\images\icons\sidebar-home.png"> Home</a>
+            <a href="albumpage.html" class="greenborder searchGreen"><img class="sidebarIcon" src="assets\images\icons\sidebar-search.png"> Search</a>
+            <a href="index.html" class="greenborder libraryGreen"><img class="sidebarIcon" src="assets\images\icons\sidebar-library.png"> Your Library</a>
         </div>
         <div class="navFoot">
             <a type="button" class="btn btn-light loginBtn">Sign Up</a>
-            <a type="button" href="login.html" class="btn btn-dark loginBtn">Login</a>
+            <a type="button" href="index.html" class="btn btn-dark loginBtn">Login</a>
             <a class="cookies p-0">Cookies | Privacy</a>
         </div>
-
+        
     </div>
     <!--  Bottom controls -->
     <div class="footer fixed-bottom">
+        <div class="smallnav">
+            <hr>
+            <div class="smallnavicon"><a href="HomePage.html" class="smallnavicon"><img class="sidebarIcon" src="assets\images\icons\sidebar-home.png">
+                    Home</a>
+            </div>
+            <div class="smallnavicon"><a href="artist.html" class="smallnavicon"><img class="sidebarIcon" src="assets\images\icons\sidebar-search.png">
+                    Search</a>
+            </div>
+            <div class="smallnavicon"><a href="index.html" class="smallnavicon"><img class="sidebarIcon" src="assets\images\icons\sidebar-library.png"> Your
+                    Library</a>
+            </div></div>
         <div class="row">
             <div class="col-2 bottomLeft">
                 <img src="https://via.placeholder.com/75" alt="Album" style="margin-right: 5px;">
@@ -147,9 +81,9 @@
                 </a><a href=""><img src="assets\images\icons\icons8-speaker-48.png" alt="" class="bottomIcon"></a>
                 <input type="range" class="form-control-range" style="width: 100px;">
             </div>
+            
         </div>
-    </div>
-
+        </div>
 
 
 
