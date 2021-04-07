@@ -22,146 +22,172 @@
       integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style-L.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="css/style-L.css" />
   </head>
-  <body>
-    <div class="HomeContainer">
-      <div class="container firstContainer">
-        <div class="row d-flex justify-content-center select-trends py-5">
-          <div class="col-2">
-            <p>TRENDING</p>
+
+  <body class="bodyClass">
+    <iframe
+      src="./navbar.html"
+      width="100%"
+      height="100%"
+      onload="this.before((this.contentDocument.body));this.remove()"
+    ></iframe>
+
+    <div class="HomeContainer container-fluid">
+      <div class="row">
+        <div class="col-md-4 col-lg-3 col-sm-2 px-sm-4"></div>
+        <div class="col-md-8 col-lg-8 col-sm-8 px-sm-4">
+          <div id="HomePageNav">
+            <div
+              class="row d-flex justify-content-space-evenly select-trends py-5"
+            >
+              <div class="col-2 navOptions">
+                <button class="btn px-0 home-nav-btns shadow-none">
+                  <span class="homeSpan active"> TRENDING</span>
+                </button>
+              </div>
+              <div class="col-2 navOptions">
+                <button class="btn px-0 home-nav-btns shadow-none">
+                  <span class="homeSpan"> PODCAST</span>
+                </button>
+              </div>
+              <div class="col-2 navOptions">
+                <button class="btn px-0 home-nav-btns shadow-none">
+                  <span class="homeSpan"> MOODS AND GENRES</span>
+                </button>
+              </div>
+              <div class="col-2 navOptions">
+                <button class="btn px-0 home-nav-btns shadow-none">
+                  <span class="homeSpan"> NEW RELEASES</span>
+                </button>
+              </div>
+              <div class="col-2 navOptions">
+                <button class="btn px-0 home-nav-btns shadow-none">
+                  <span class="homeSpan"> DISCOVER</span>
+                </button>
+              </div>
+            </div>
           </div>
-          <div class="col-2">
-            <p>PODCAST</p>
-          </div>
-          <div class="col-2">
-            <p>MOODS AND GENRES</p>
-          </div>
-          <div class="col-2">
-            <p>NEW RELEASES</p>
-          </div>
-          <div class="col-2">
-            <p>DISCOVER</p>
-          </div>
-        </div>
-        <h2>#THROWBACKTHURSDAY</h2>
-        <div class="row mt-4 mb-5">
-          <div class="col-md-2">
-            <div class="tile-card">
-              <img
-                src="assets/images/homepage-images/music2.jfif"
-                class="img-fluid"
-                alt=""
-              />
-              <!--BEFORE-->
-              <!--  <div class="tile-logo">
+          <h2>#THROWBACKTHURSDAY</h2>
+          <div class="row mt-4 mb-5 no-gutters pl-2">
+            <div class="col-md-3 col-lg-2 col-sm-4 px-2">
+              <div class="tile-card">
+                <img
+                  src="assets/images/homepage-images/music2.jfif"
+                  class="img-fluid rounded"
+                  alt=""
+                />
+                <!--BEFORE-->
+                <!--  <div class="tile-logo">
                 <i class="fab fa-spotify"></i>
               </div> -->
-              <div class="tile-title">Italian Karaoke</div>
+                <div class="tile-title">Italian Karaoke</div>
+              </div>
+            </div>
+            <div class="col-md-3 col-lg-2 col-sm-4 px-2">
+              <div class="tile-card">
+                <img
+                  src="assets/images/homepage-images/music2.jfif"
+                  class="img-fluid rounded"
+                  alt=""
+                />
+                <div class="tile-title">Lyricists</div>
+              </div>
+            </div>
+            <div class="col-md-3 col-lg-2 col-sm-4 px-2">
+              <div class="tile-card">
+                <img
+                  src="assets/images/homepage-images/music2.jfif"
+                  class="img-fluid rounded"
+                  alt=""
+                />
+                <div class="tile-title">English Frequent Rotation</div>
+              </div>
+            </div>
+            <div class="col-md-3 col-lg-2 col-sm-4 px-2">
+              <div class="tile-card">
+                <img
+                  src="assets/images/homepage-images/music2.jfif"
+                  class="img-fluid rounded"
+                  alt=""
+                />
+                <div class="tile-title">2000s English</div>
+              </div>
+            </div>
+            <div class="col-md-3 col-lg-2 col-sm-4 px-2">
+              <div class="tile-card">
+                <img
+                  src="assets/images/homepage-images/music2.jfif"
+                  class="img-fluid rounded"
+                  alt=""
+                />
+                <div class="tile-title">Cocktail Hour</div>
+              </div>
+            </div>
+            <div class="col-md-3 col-lg-2 col-sm-4 px-2">
+              <div class="tile-card">
+                <img
+                  src="assets/images/homepage-images/music2.jfif"
+                  class="img-fluid rounded"
+                  alt=""
+                />
+                <div class="tile-title">I Love My '90s Hip-Hop</div>
+              </div>
             </div>
           </div>
-          <div class="col-md-2">
-            <div class="tile-card">
-              <img
-                src="assets/images/homepage-images/music2.jfif"
-                class="img-fluid"
-                alt=""
-              />
-              <div class="tile-title">Lyricists</div>
+          <!--Row two with HEADING-->
+          <h2>Classics</h2>
+          <div class="row mt-4 mb-5 no-gutters">
+            <div class="col-md-3 col-lg-2 col-sm-4 px-2">
+              <div class="tile-card">
+                <img
+                  src="assets/images/homepage-images/music2.jfif"
+                  class="img-fluid rounded"
+                  alt=""
+                />
+                <div class="tile-title">Italian Karaoke</div>
+              </div>
             </div>
-          </div>
-          <div class="col-md-2">
-            <div class="tile-card">
-              <img
-                src="assets/images/homepage-images/music2.jfif"
-                class="img-fluid"
-                alt=""
-              />
-              <div class="tile-title">English Frequent Rotation</div>
+            <div class="col-md-3 col-lg-2 col-sm-4 px-2">
+              <div class="tile-card">
+                <img
+                  src="assets/images/homepage-images/music2.jfif"
+                  class="img-fluid rounded"
+                  alt=""
+                />
+                <div class="tile-title">Lyricists</div>
+              </div>
             </div>
-          </div>
-          <div class="col-md-2">
-            <div class="tile-card">
-              <img
-                src="assets/images/homepage-images/music2.jfif"
-                class="img-fluid"
-                alt=""
-              />
-              <div class="tile-title">2000s English</div>
+            <div class="col-md-3 col-lg-2 col-sm-4 px-2">
+              <div class="tile-card">
+                <img
+                  src="assets/images/homepage-images/music2.jfif"
+                  class="img-fluid rounded"
+                  alt=""
+                />
+                <div class="tile-title">English Frequent Rotation</div>
+              </div>
             </div>
-          </div>
-          <div class="col-md-2">
-            <div class="tile-card">
-              <img
-                src="assets/images/homepage-images/music2.jfif"
-                class="img-fluid"
-                alt=""
-              />
-              <div class="tile-title">Cocktail Hour</div>
+            <div class="col-md-3 col-lg-2 col-sm-4 px-2">
+              <div class="tile-card">
+                <img
+                  src="assets/images/homepage-images/music2.jfif"
+                  class="img-fluid rounded"
+                  alt=""
+                />
+                <div class="tile-title">2000s English</div>
+              </div>
             </div>
-          </div>
-          <div class="col-md-2">
-            <div class="tile-card">
-              <img
-                src="assets/images/homepage-images/music2.jfif"
-                class="img-fluid"
-                alt=""
-              />
-              <div class="tile-title">I Love My '90s Hip-Hop</div>
-            </div>
-          </div>
-        </div>
-        <!--Row two with HEADING-->
-        <h2>Classics</h2>
-        <div class="row mt-4 mb-5">
-          <div class="col-md-2">
-            <div class="tile-card">
-              <img
-                src="assets/images/homepage-images/music2.jfif"
-                class="img-fluid"
-                alt=""
-              />
-              <div class="tile-title">Italian Karaoke</div>
-            </div>
-          </div>
-          <div class="col-md-2">
-            <div class="tile-card">
-              <img
-                src="assets/images/homepage-images/music2.jfif"
-                class="img-fluid"
-                alt=""
-              />
-              <div class="tile-title">Lyricists</div>
-            </div>
-          </div>
-          <div class="col-md-2">
-            <div class="tile-card">
-              <img
-                src="assets/images/homepage-images/music2.jfif"
-                class="img-fluid"
-                alt=""
-              />
-              <div class="tile-title">English Frequent Rotation</div>
-            </div>
-          </div>
-          <div class="col-md-2">
-            <div class="tile-card">
-              <img
-                src="assets/images/homepage-images/music2.jfif"
-                class="img-fluid"
-                alt=""
-              />
-              <div class="tile-title">2000s English</div>
-            </div>
-          </div>
-          <div class="col-md-2">
-            <div class="tile-card">
-              <img
-                src="assets/images/homepage-images/music2.jfif"
-                class="img-fluid"
-                alt=""
-              />
-              <div class="tile-title">Cocktail Hour</div>
+            <div class="col-md-3 col-lg-2 col-sm-4 px-2">
+              <div class="tile-card">
+                <img
+                  src="assets/images/homepage-images/music2.jfif"
+                  class="img-fluid rounded"
+                  alt=""
+                />
+                <div class="tile-title">Cocktail Hour</div>
+              </div>
             </div>
           </div>
         </div>
@@ -185,6 +211,6 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-    <script src="HomePage.js"></script>
+    <script src="assets/javaScript/HomePage.js"></script>
   </body>
 </html>

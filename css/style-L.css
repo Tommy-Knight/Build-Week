@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Prompt:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap");
+body {
+  background: linear-gradient(120deg, #30517a, #191414);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.tile-title {
+  font-size: 12px;
+  text-align: center;
+  margin: 1.5em;
+  font-weight: 800;
+  position: relative;
+  letter-spacing: 1px;
+}
+
+.justify-content-space-evenly {
+  justify-content: center;
+}
+.HomeContainer {
+  color: white;
+  font-family: "Prompt", sans-serif;
+}
+
+.HomeContainer h2 {
+  font-weight: 600;
+}
+
+.select-trends .btn {
+  font-family: "Prompt", sans-serif;
+  font-weight: 600;
+  letter-spacing: 3px;
+  font-size: 10px;
+  color: white;
+}
+
+.tile-card {
+  position: relative;
+  transition: all 1s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.tile-logo {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.tile-logo img {
+  height: 20px;
+}
+
+.tile-card:hover {
+  transform: scale(1.5);
+  z-index: 1;
+}
+
+div.navOptions > button {
+  position: relative;
+}
+
+button.home-nav-btns::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 3px;
+  bottom: -3.5px;
+  left: 20%;
+  background-color: #349e5e;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+button.home-nav-btns:hover:after {
+  visibility: visible;
+  transform: scaleX(1);
+}
