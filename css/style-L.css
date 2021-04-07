@@ -82,7 +82,7 @@ button.home-nav-btns:hover:after {
   opacity: 0.7;
 }
 
-@media all and (max-width: 576px) and (min-width: 300px) {
+@media all and (max-width: 576px) and (min-width: 100px) {
   .col-xs-4 {
     width: 50% !important;
   }
