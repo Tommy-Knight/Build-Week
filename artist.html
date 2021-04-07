@@ -45,313 +45,127 @@
       integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="Album.css" />
+    <link rel="stylesheet" href="artist.css" />
+    <link rel="stylesheet" href="./css/login.css" />
+    
     <title>Spotify | Album</title>
   </head>
   <body>
-    <style>
-    body {
-        overflow-x: hidden;
-        background-color: #1c1c1c;
-        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-      }
-      
-      /*JUMBOTRON START*/
-      .container-fluid {
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-      }
-      
-      .jumbotron {
-        position: relative;
-        background-image: url(http://placehold.it/150);
-        background-repeat: no-repeat;
-        background-size: cover;
-        margin-left: 220px;
-        height: 320px;
-        margin-bottom: 0;
-        color: #fff;
-        object-fit: fill;
-      }
-      .jumbotron:before {
-        content: "";
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background: rgb(28, 28, 28);
-        background: linear-gradient(
-          0deg,
-          rgba(28, 28, 28, 1) 0%,
-          rgba(0, 0, 0, 1) 8%,
-          rgba(0, 0, 0, 0.2976540958180147) 100%,
-          rgba(0, 0, 0, 0.03) 100%,
-          rgba(0, 0, 0, 0.04) 100%
-        );
-        z-index: 1;
-      }
-      .breadcrumb-nav {
-        position: absolute;
-        bottom: 16px;
-        width: 100%;
-        margin: 0 auto;
-        text-align: center;
-      }
-      .breadcrumb {
-        background-color: transparent !important;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        margin: 0 auto;
-      }
-      .breadcrumb-item a {
-        color: white !important;
-        position: relative !important;
-        z-index: 2;
-        font-size: 14px;
-        text-align: center;
-        text-decoration: none;
-        border-bottom: 3px solid transparent;
-        transition: all ease 0.5s;
-      }
-      .breadcrumb-item a:focus,
-      .breadcrumb-item a:hover {
-        transition: all ease 0.5s;
-        border-bottom: 3px solid #1ed760;
-      }
-      .queen {
-        z-index: 200 !important;
-        font-size: 60px;
-        font-weight: bold;
-        position: relative;
-      }
-      .listeners {
-        color: #fff;
-        position: relative;
-        z-index: 2 !important;
-      }
-      .play {
-        z-index: 200 !important;
-        background-color: #1ed760;
-        padding: 7px;
-        border-radius: 20px;
-        color: #fff;
-        border: 2px solid #1ed760;
-        font-size: 13px;
-        width: 100px;
-        position: relative;
-        transition: all ease 0.5s;
-      }
-      .play:hover {
-        z-index: 200 !important;
-        background-color: #18c053;
-        padding: 7px;
-        border-radius: 20px;
-        color: #ffff;
-        border: 2px solid #18c053;
-        font-size: 13px;
-        width: 100px;
-        position: relative;
-        transition: all ease 0.5s;
-      }
-      .dots {
-        z-index: 200 !important;
-        position: relative;
-      }
-      .follow {
-        background-color: rgba(0, 0, 0, 0.3);
-        border: 2px solid #fff;
-        color: #fff;
-        border-radius: 20px;
-        padding: 7px;
-        z-index: 2 !important;
-        text-shadow: 12px;
-        font-size: 13px;
-        width: 100px;
-        position: relative;
-        transition: all ease 0.5s;
-      }
-      .follow:hover {
-        transition: all ease 0.5s;
-        background-color: #fff;
-        border: 2px solid #fff;
-        color: #000;
-        border-radius: 20px;
-        padding: 7px;
-        z-index: 2 !important;
-        text-shadow: 12px;
-        font-size: 13px;
-        width: 100px;
-        position: relative;
-      }
-      /*JUMBOTRON END*/
-
-      
- 
-    </style>
-
+    <iframe
+      src="./navbar.html"
+      width="100%"
+      height="100%"
+      onload="this.before((this.contentDocument.body));this.remove()"
+    ></iframe>
 
    <!--JUMBOTRON START-->
-   <div class="container-fluid">
-     <div class="jumbotron jumbotron-fluid">
-       <div class="container text-center jumbotron-text">
-         <p class="text-center p-0 m-0 listeners">
-           33,000,676 MONTHLY LISTENERS
-         </p>
-         <h1 class="display-4 text-center queen mt-0 mb-4">Best Albums Of 2020</h1>
-         <span class="lead text-center mx-auto">
-           <button class="play mr-2">PLAY</button>
-           <button class="follow mr-3">FOLLOW</button>
-           <svg
-             width="1em"
-             class="dots"
-             height="1em"
-             viewBox="0 0 16 16"
-             class="bi bi-three-dots"
-             fill="currentColor"
-             xmlns="http://www.w3.org/2000/svg"
-           >
-             <path
-               fill-rule="evenodd"
-               d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"
-             />
-           </svg>
-         </span>
-       </div>
-       <nav aria-label="breadcrumb" class="breadcrumb-nav">
-         <ol class="breadcrumb">
-           <li class="breadcrumb-item"><a href="#">OVERVIEW</a></li>
-           <li class="breadcrumb-item"><a href="#">RELATED ARTIST</a></li>
-           <li class="breadcrumb-item"><a href="#">ABOUT</a></li>
-         </ol>
-       </nav>
-     </div>
+
+   <div>
+    <div class="container-fluid no-margin banner">
+
+            <div class="d-flex flex-column align-items-center justify-content-end" id="main">
+                <h6 class="text-muted mt-5">33,000,575 MONTHLY LISTENERS</h6>
+                <h1>Queen</h1>
+
+                <div class="buttons mt-3">
+                    <button type="button" class="btn btn-sm btn1 play">PLAY</button>
+                    <button type="button" class="btn btn-secondary btn-sm btn2 follow">
+                        FOLLOW
+                    </button>
+                    <i class="fas fa-ellipsis-h btn3"></i>
+                </div>
+
+                <ul class="d-flex mt-5 list">
+                    <li class="px-4"><a href="#first">OVERVIEW</a></li>
+                    <li class="px-4"><a href="">RELATED ARTISTS</a></li>
+                    <li class="px-4"><a href="">ABOUT</a></li>
+                </ul>
+            </div>
+        </div>
      <!--JUMBOTRON END-->
 
      <!--ALBUM CONTAINER START-->
-     <div class="songs container mt-4 p-0" id="songs">
-       <h3 style="color: #fff; margin-left: 65px">Albums</h3>
-       <div class="row mt-4 mb-5">
-        <div class="col-md-2">
-          <div class="tile-card">
-            <img
-              src="assets/images/artist-images/maitre gims.jpg"
-              class="img-fluid"
-              alt=""
-            />
-            <div class="tile-title">Italian Karaoke</div>
+     <div class="container">
+
+      <h3 class="mt-4 mb-2">Albums</h3>
+
+
+      <div class="row" id="first">
+
+
+          <div class="col-sm-6 col-md-2 album card-body">
+              <img src="assets/images/artist-images/maitre gims.jpg" class="img-fluid" height="250px" width="250px" alt="">
+              <h6>Bohemian Rhapsody (The Original Soundtrack)</h6>
+              <span class="text-muted">Queen</span>
           </div>
-        </div>
-        <div class="col-md-2">
-          <div class="tile-card">
-            <img
-              src="assets/images/artist-images/maitre gims.jpg"
-              class="img-fluid"
-              alt=""
-            />
-            <div class="tile-title">Divide</div>
+          <div class="col-sm-6 col-md-2 album card-body">
+              <img src="assets/images/artist-images/maitre gims.jpg" class="img-fluid" height="250px" width="250px" alt="">
+              <h6>On Air</h6>
+              <span class="text-muted">Queen</span>
           </div>
-        </div>
-        <div class="col-md-2">
-          <div class="tile-card">
-            <img
-              src="assets/images/artist-images/maitre gims.jpg"
-              class="img-fluid"
-              alt=""
-            />
-            <div class="tile-title">Scopian</div>
+          <div class="col-sm-6 col-md-2 album card-body">
+              <img src="assets/images/artist-images/maitre gims.jpg" class="img-fluid" height="250px" width="250px" alt="">
+              <h6>Cocktail Hour</h6>
+              <span class="text-muted">Queen</span>
           </div>
-        </div>
-        <div class="col-md-2">
-          <div class="tile-card">
-            <img
-              src="assets/images/artist-images/maitre gims.jpg"
-              class="img-fluid"
-              alt=""
-            />
-            <div class="tile-title">2000s English</div>
+          <div class="col-sm-6 col-md-2 album card-body">
+              <img src="assets/images/artist-images/maitre gims.jpg" class="img-fluid" height="250px" width="250px" alt="">
+              <h6>Live At The Rainbow</h6>
+              <span class="text-muted">Queen</span>
           </div>
-        </div>
-        <div class="col-md-2">
-          <div class="tile-card">
-            <img
-              src="assets/images/artist-images/maitre gims.jpg"
-              class="img-fluid"
-              alt=""
-            />
-            <div class="tile-title">Cocktail Hour</div>
+          <div class="col-sm-6 col-md-2 album card-body">
+              <img src="assets/images/artist-images/maitre gims.jpg" class="img-fluid" height="250px" width="250px" alt="">
+              <h6>English Frequent Rotatione</h6>
+              <span class="text-muted">Queen</span>
           </div>
-        </div>
-        <div class="col-md-2">
-          <div class="tile-card">
-            <img
-            src="assets/images/artist-images/maitre gims.jpg"
-              class="img-fluid"
-              alt=""
-            />
-            <div class="tile-title">Italian Karaoke</div>
+          <div class="col-sm-6 col-md-2 album card-body">
+              <img src="assets/images/artist-images/maitre gims.jpg" class="img-fluid" height="250px" width="250px" alt="">
+              <h6>Cocktail Hour</h6>
+              <span class="text-muted">Queen</span>
           </div>
-        </div>
-        <div class="col-md-2">
-          <div class="tile-card">
-            <img
-              src="assets/images/artist-images/maitre gims.jpg"
-              class="img-fluid"
-              alt=""
-            />
-            <div class="tile-title">Lyricists</div>
+
+
+          <div class="col-sm-6 col-md-2 album card-body">
+              <img src="assets/images/artist-images/maitre gims.jpg" class="img-fluid" height="250px" width="250px" alt="">
+              <h6>Album Name</h6>
+              <span class="text-muted">Queen</span>
           </div>
-        </div>
-        <div class="col-md-2">
-          <div class="tile-card">
-            <img
-              src="assets/images/artist-images/maitre gims.jpg"
-              class="img-fluid"
-              alt=""
-            />
-            <div class="tile-title">English Frequent Rotation</div>
+          <div class="col-sm-6 col-md-2 album card-body">
+              <img src="assets/images/artist-images/maitre gims.jpg" class="img-fluid" height="250px" width="250px" alt="">
+              <h6>English Frequent Rotation</h6>
+              <span class="text-muted">Queen</span>
           </div>
-        </div>
-        <div class="col-md-2">
-          <div class="tile-card">
-            <img
-              src="assets/images/artist-images/maitre gims.jpg"
-              class="img-fluid"
-              alt=""
-            />
-            <div class="tile-title">2000s English</div>
+          <div class="col-sm-6 col-md-2 album card-body">
+              <img src="assets/images/artist-images/maitre gims.jpg" class="img-fluid" height="250px" width="250px" alt="">
+              <h6>Cocktail Houre </h6>
+              <span class="text-muted">Queen</span>
           </div>
-        </div>
-        <div class="col-md-2">
-          <div class="tile-card">
-            <img
-              src="assets/images/artist-images/maitre gims.jpg"
-              class="img-fluid"
-              alt=""
-            />
-            <div class="tile-title">Cocktail Hour</div>
+          <div class="col-sm-6 col-md-2 album card-body">
+              <img src="assets/images/artist-images/maitre gims.jpg" class="img-fluid" height="250px" width="250px" alt="">
+              <h6>English Frequent Rotation</h6>
+              <span class="text-muted">Queen</span>
           </div>
-        </div>
-        <div class="col-md-2">
-          <div class="tile-card">
-            <img
-              src="assets/images/artist-images/maitre gims.jpg"
-              class="img-fluid"
-              alt=""
-            />
-            <div class="tile-title">2000s English</div>
+          <div class="col-sm-6 col-md-2 album card-body">
+              <img src="assets/images/artist-images/maitre gims.jpg" class="img-fluid" height="250px" width="250px" alt="">
+              <h6>Album Name</h6>
+              <span class="text-muted">Queen</span>
           </div>
-        </div>
-        <div class="col-md-2">
-          <div class="tile-card">
-            <img
-              src="assets/images/artist-images/maitre gims.jpg"
-              class="img-fluid"
-              alt=""
-            />
+          <div class="col-sm-6 col-md-2 album card-body">
+              <img src="assets/images/artist-images/maitre gims.jpg" class="img-fluid" height="250px" width="250px" alt="">
+              <h6>Cocktail Hour</h6>
+              <span class="text-muted">Queen</span>
+          </div>
+
       </div>
+  </div>
+
+</div>
+
+
+
+</div>
+</div>
+</div>
    <!--ALBUM CONTAINER END-->
 
 

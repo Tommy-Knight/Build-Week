@@ -1,0 +1,127 @@
+body {
+  color: white;
+  background-color: rgb(34, 34, 34);
+  font-family: sans-serif;
+}
+
+#sidebar a {
+  color: grey;
+}
+#sidebar i {
+  color: white;
+
+}
+
+#main {
+
+  background-image: linear-gradient(to bottom, rgba(5, 5, 5, 0.52), rgba(60, 59, 59, 0.73)), url("./baner.jpg");
+  height: 350px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+a:hover {
+  color: rgb(0, 86, 179);
+  text-decoration: none;
+}
+
+#player {
+  height: 7vh;
+}
+
+.list li a {
+  list-style: none;
+  color: white;
+  font-weight: bold;
+}
+
+.list li a:active {
+  text-decoration: underline lightgreen 2px;
+
+
+}
+.list li {
+  list-style: none;
+}
+
+#sidebar {
+  background-color: black;
+  width: 200px !important;
+}
+
+.line-break {
+  background-color: grey 
+}
+#profile-pic {
+  border-radius: 50%;
+}
+
+#main > h6 {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+.album h6 {
+  font-size: 15px;
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+}
+.album > span {
+  font-size: 13px;
+}
+
+#main > h1 {
+  font-weight: 600;
+  font-size: 50px;
+}
+
+body > div.container > h3 {
+  font-weight: 700;
+}
+
+.btn1 {
+
+  border-radius: 25px;
+  width: 110px;
+  background-color: rgb(0, 189, 0);
+  color: white;
+  height: 35px;
+  font-size: 11px;
+
+}
+
+.btn2 {
+  border-radius: 25px;
+  width: 120px;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  cursor:pointer;
+  overflow: hidden; 
+  margin-left: 10px;
+  border: 1px white solid;
+  height: 35px;
+  font-size: 11px;
+}
+.btn3 {
+  font-size: 15px;
+  margin-left: 20px;
+  height: 35px;
+}
+
+.no-margin {
+  padding: 0;
+  margin: 0;
+}
+
+.album {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.top-items a i {
+  margin-right: 10px;
+
+}
