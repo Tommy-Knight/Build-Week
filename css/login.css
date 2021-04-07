@@ -1,8 +1,10 @@
-.container-fluid {
+<<<<<<< Updated upstream
+=======
+/* .container-fluid {
   margin: 0 auto;
-}
+} */
 
-.container {
+.spotify-container-n{
   display: flex;
   justify-content: center;
 }
@@ -25,8 +27,8 @@
 .header-n h1 {
   font-size: 40px;
 }
-
-.btn {
+/*All buttons styling login and album page*/
+.btn-n {
   border-radius: 30px;
   width: 100%;
   margin-top: 5px;
@@ -185,71 +187,118 @@ i {
   #btn-signup-n {
     font-size: 13px;
   }
+
 }
-/* -------------------------- Album Page start */
-body {
+
+/* -------------------------- Album Page start ------------------------- */
+/*-only body of albumpage-*/
+.body-n {
   background-color: #5d5d5d;
   background-image: linear-gradient(132deg, #202020 0%, #050505 95%);
-}
-.container {
-  border: blueviolet solid 3px;
-}
-#img-album-n {
-  width: 300px;
+  overflow-y: visible;
+  max-height: 100vh;
+  /* margin-bottom: 100px !important; */
 }
 
-.col-3 {
+.invisible-placeholder-n {
   border: solid palegreen 2px;
+  
 }
-.col-6 {
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(200,200,200,1);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color:#fff;
+  -webkit-box-shadow: inset 0 0 6px rgba(90,90,90,0.7);
+}
+
+  /*---------tracklist column-----------------*/
+  .tracklist-n {
+    max-height: 100vh;
+    border:solid blueviolet 2px;
+    padding-left: 2rem !important;
+    margin-left: 50px !important;
+    overflow-y: scroll;
+    
+  }
+  
+  ul {
+    padding-left: 20px;
+    list-style: none;
+  }
+  
+  li {
+    margin-bottom: 10px;
+    list-style: none !important;
+  }
+  
+  li:nth-child(even) {
+    color: grey;
+    font-size: 13px;
+    font-weight: 600;
+  }
+  li:nth-child(odd) {
+    color: #fff;
+    font-weight: 500;
+    font-size: 15px;
+    margin: 0;
+  }
+  /*------------album cover column-------------*/
+ 
+.album-cover-n {
   border: red solid 2px;
 }
-
-#img-note-n {
-  margin-left: 20px;
-  left: -100px;
-  width: 18px;
-}
-
-ul {
-  padding-left: 20px;
-  list-style: none;
-}
-
-li {
-  margin-bottom: 10px;
-  list-style: none !important;
-}
-
-li:nth-child(even) {
-  color: grey;
-  font-size: 13px;
-  font-weight: 600;
-}
-li:nth-child(odd) {
-  color: #fff;
-  font-weight: 500;
-  font-size: 15px;
-  margin: 0;
-}
-
-.album-n {
-  color: white;
-  text-align: center;
-}
-.album-n p {
-  margin-top: 10px;
-  color: #5d5d5d;
-  font-size: 12px;
-  font-weight: 700;
-}
-
+  
+  #img-album-n {
+    max-width: 100%;
+  }
+  
+  .album-n {
+    color: white;
+    text-align: center;
+  }
+  
+  .album-n p {
+    margin-top: 10px;
+    color: #5d5d5d;
+    font-size: 12px;
+    font-weight: 700;
+  }
+/*"play now button*/
 .album-n button {
   margin-top: 10px !important;
   width: 130px !important;
   margin: 0 auto;
 }
-
+/*heart like styling*/
 .far .fa-heart {
   font-size: 25px;
 }
+/*--------Screen sizing for albumpage---------------*/
+
+@media screen and (max-width: 970px){
+  .tracklist-n{ padding-left: 10px !important;
+ }
+}
+@media screen and (max-width: 768px) {
+  .tracklist-n {
+
+    border:solid rgb(226, 214, 43) 2px;
+    padding-left: 6rem !important;
+  }
+
+  .album-cover-n  {
+    border: red solid 2px;
+    padding: 2rem;
+  }
+}
+/*--------------------------------------------*/
+/*--------------Album Page End-------------------*/
+>>>>>>> Stashed changes
