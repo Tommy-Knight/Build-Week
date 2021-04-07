@@ -115,7 +115,37 @@
 	.footer{
 		height: 150px;
 	}
-	/* .hideicon{
-		display: none!important;
-	} */
+		input[type="range"] {
+		position: fixed !important;
+		right: -30px;
+		width: 80px!important;
+		transform: rotate(270deg);
+	}
+	input[type='range'] {
+      overflow: hidden;
+      -webkit-appearance: none;
+      background-color: #434343!important;
+    }
+    
+    input[type='range']::-webkit-slider-thumb {
+      width: 11px;
+      -webkit-appearance: none;
+      height: 11px;
+      cursor: n-resize!important;
+      background: #1db954!important;
+      box-shadow: -80px 0 0 80px #434343!important;
+    }
 }
+
+input[type='range'] {
+      width: 80px;
+      -webkit-appearance: none;
+      background-color: #434343;
+    }
+    input[type='range']::-webkit-slider-thumb {
+      width: 10px;
+      -webkit-appearance: none;
+      height: 11px;
+      cursor: ew-resize;
+      background: #1db954;
+    }
