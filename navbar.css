@@ -54,6 +54,8 @@
 	height: 30px;
 }
 .navFoot{
+	position: absolute;
+	bottom: 105px;
 	
 }
 .loginBtn{
