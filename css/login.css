@@ -109,7 +109,7 @@ i {
 /* Customize the label (the container) */
 #label-n {
   display: block;
-  position: relative;
+  position: absolute;
   padding-left: 35px;
   margin-bottom: 12px;
   cursor: pointer;
@@ -119,6 +119,7 @@ i {
   user-select: none;
   font-size: 14px;
   color: grey;
+  top: 35%;
 }
 
 /* Hide the browser's default checkbox */
@@ -129,12 +130,13 @@ i {
   height: 0;
   width: 0;
   padding-top: 50px;
+  
 }
 
 /* Create a custom checkbox */
-.checkmark {
+.checkmark-n {
   position: absolute;
-  top: 0;
+  
   left: 0;
   height: 18px;
   width: 18px;
@@ -143,30 +145,30 @@ i {
 }
 
 /* On mouse-over, add a grey background color */
-#label-n:hover input ~ .checkmark {
+#label-n:hover input ~ .checkmark-n {
   background-color: rgb(231, 231, 231);
   border: solid black 1px;
 }
 
 /* When the checkbox is checked, add a blue background */
-#label-n input:checked ~ .checkmark {
+#label-n input:checked ~ .checkmark-n {
   background-color: green;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
-.checkmark:after {
+.checkmark-n:after {
   content: "";
   position: absolute;
   display: none;
 }
 
 /* Show the checkmark when checked */
-#label-n input:checked ~ .checkmark:after {
+#label-n input:checked ~ .checkmark-n:after {
   display: block;
 }
 
 /* Style the checkmark/indicator */
-#label-n .checkmark:after {
+#label-n .checkmark-n:after {
   left: 7px;
   top: 1px;
   width: 7px;
