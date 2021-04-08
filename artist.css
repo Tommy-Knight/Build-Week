@@ -1,7 +1,15 @@
+@font-face {
+	font-family: "spotifyfont";
+	src: url("spotifyfont-webfont.woff2") format("woff2"),
+		url("spotifyfont-webfont.woff") format("woff");
+}
+
+
+
 body {
   color: white;
   background-color: rgb(34, 34, 34);
-  font-family: sans-serif;
+  font-family: spotifyfont;
 }
 
 
