@@ -1,7 +1,7 @@
 @font-face {
-	font-family: "spotifyfont";
-	src: url("spotifyfont-webfont.woff2") format("woff2"),
-		url("spotifyfont-webfont.woff") format("woff");
+  font-family: "spotifyfont";
+  src: url("spotifyfont-webfont.woff2") format("woff2"),
+    url("spotifyfont-webfont.woff") format("woff");
 }
 
 body {
@@ -32,6 +32,7 @@ body {
 .header-n h1 {
   font-size: 40px;
 }
+
 /*All buttons styling login and album page*/
 .btn-n {
   border-radius: 30px;
@@ -46,6 +47,7 @@ body {
   align-items: center;
   font-size: 12px;
 }
+
 .hr-sect::before,
 .hr-sect::after {
   content: "";
@@ -57,9 +59,11 @@ body {
   margin-top: 25px;
   margin-bottom: 25px;
 }
+
 .hr-sect::before {
   margin-right: 25px;
 }
+
 .hr-sect::after {
   margin-left: 25px;
 }
@@ -82,9 +86,11 @@ body {
   background: black;
   color: white;
 }
+
 i {
   margin-right: 15px;
 }
+
 #btn-login-n {
   background: #47b850;
   color: white;
@@ -93,6 +99,7 @@ i {
 #btn-signup-n {
   border: 2px solid black;
 }
+
 #p-first-n {
   margin: 0;
 }
@@ -137,13 +144,13 @@ i {
   height: 0;
   width: 0;
   padding-top: 50px;
-  
+
 }
 
 /* Create a custom checkbox */
 .checkmark-n {
   position: absolute;
-  
+
   left: 0;
   height: 18px;
   width: 18px;
@@ -152,13 +159,13 @@ i {
 }
 
 /* On mouse-over, add a grey background color */
-#label-n:hover input ~ .checkmark-n {
+#label-n:hover input~.checkmark-n {
   background-color: rgb(231, 231, 231);
   border: solid black 1px;
 }
 
 /* When the checkbox is checked, add a blue background */
-#label-n input:checked ~ .checkmark-n {
+#label-n input:checked~.checkmark-n {
   background-color: green;
 }
 
@@ -170,7 +177,7 @@ i {
 }
 
 /* Show the checkmark when checked */
-#label-n input:checked ~ .checkmark-n:after {
+#label-n input:checked~.checkmark-n:after {
   display: block;
 }
 
@@ -188,6 +195,7 @@ i {
 }
 
 @media screen and (max-width: 340px) {
+
   #btn-fb-n,
   #btn-apple-n,
   #btn-login-n,
@@ -205,138 +213,170 @@ i {
   background-image: linear-gradient(132deg, #202020 0%, #050505 95%);
   overflow: hidden;
   height: 100%;
-  
+
 }
 
 .invisible-placeholder-n {
   border: solid palegreen 2px;
-  
+
 }
+
 ::-webkit-scrollbar {
   width: 12px;
 }
 
 ::-webkit-scrollbar-track {
-box-shadow: inset 0 0 6px rgb(20, 20, 20);
+  box-shadow: inset 0 0 6px rgb(20, 20, 20);
 
 }
 
 ::-webkit-scrollbar-thumb {
-   background-color:rgb(22, 22, 22);
- box-shadow: inset 0 0 6px rgba(90,90,90,0.7);
+  background-color: rgb(22, 22, 22);
+  box-shadow: inset 0 0 6px rgba(90, 90, 90, 0.7);
 }
 
-  /*---------tracklist column-----------------*/
-  .tracklist-n {
-    max-height: 100vh;
-    padding-left: 2rem !important;
-    margin-left: 50px !important;
-    overflow-y: scroll;
-    padding-bottom: 150px !important;
-    }
-  
-  ul {
-    padding-left: 20px;
-    list-style: none;
-  }
-  
-  li {
-    margin-bottom: 10px;
-    list-style: none !important;
-  }
-  
-  li:nth-child(even) {
-    color: grey;
-    font-size: 13px;
-    font-weight: 600;
-  }
-  li:nth-child(odd) {
-    color: #fff;
-    font-weight: 500;
-    font-size: 15px;
-    margin: 0;
-  }
-  /*------------album cover column-------------*/
- 
+/*---------tracklist column-----------------*/
+.tracklist-n {
+  max-height: 100vh;
+  padding-left: 2rem !important;
+  margin-left: 50px !important;
+  overflow-y: scroll;
+  padding-bottom: 150px !important;
+}
 
-  
-  #img-album-n {
-    max-width: 100%;
-  }
-  
-  .album-n {
-    color: white;
-    text-align: center;
-  }
-  
-  .album-n p {
-    margin-top: 10px;
-    color: #5d5d5d;
-    font-size: 12px;
-    font-weight: 700;
-  }
+ul {
+  padding-left: 20px;
+  list-style: none;
+}
+
+li {
+  margin-bottom: 10px;
+  list-style: none !important;
+}
+
+li:nth-child(even) {
+  color: grey;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+li:nth-child(odd) {
+  color: #fff;
+  font-weight: 500;
+  font-size: 15px;
+  margin: 0;
+}
+
+/*------------album cover column-------------*/
+
+#img-album-n {
+  width: 100%;
+  max-width: 500px;
+}
+
+.album-n {
+  display: flex;
+  color: white;
+  justify-content: center;
+  padding-left: 270px !important;
+  align-items: center;
+  justify-content: center;
+  margin-top: -10%;
+  right:0;
+}
+
+.album-n p {
+  margin-top: 10px;
+  color: #5d5d5d;
+  font-size: 12px;
+  font-weight: 700;
+}
+
 /*"play now button*/
 .album-n button {
   margin-top: 10px !important;
   width: 130px !important;
   margin: 0 auto;
 }
+
 /*heart like styling*/
 .far .fa-heart {
   font-size: 25px;
 }
+
 /*--------Screen sizing for albumpage---------------*/
+@media screen and (max-width: 1024px) {
+  .album-n {
 
-@media screen and (max-width: 979px){
-  .tracklist-n { padding-left: 10px !important;
- }
- .body-n {
-     overflow: visible;
-     margin-bottom: 190px !important;
- }
- #img-album-n {
-  width: 100%; 
-  max-width:500px;
-
-  position: relative;
- 
-}
-.album-cover-n  {
-  padding-left:250px ;
-  margin-right: -50px;
-  
-}
-
-@media screen and (max-width: 768px) {
-.body-n{
-  padding-bottom: 550px !important;
-}
+    border: red solid 1px;
+    margin-right: -50px !important;
+  }
 
   .tracklist-n {
-    padding-left: 20px !important;
-    margin-left: 0px !important;
-    width: 700px !important;
-    overflow: visible;
-   
-   
+    border: solid purple 1px;
   }
-  
-  .album-cover-n  {
-    width: 100%;
-    min-width: 300px;
-    padding-left: 0px;
-    padding-right: 0px !important;
-    margin-left:  0px !important;
-    margin-right:  0px !important;
-        
+}
+
+@media screen and (max-width: 979px) {
+  .tracklist-n {
+    padding-left: 10px !important;
+    border: solid purple 1px;
+  }
+
+  .body-n {
+    overflow: visible;
+    margin-bottom: 190px !important;
   }
 
   #img-album-n {
-    max-width: 75%;
-    min-width: 280px;
+    width: 100%;
+    max-width: 500px;
+    position: relative;
 
   }
-  
-}
-/*--------------------------------------------*/
-/*--------------Album Page End-------------------*/
+
+  .album-n {
+
+    margin-right: -50px;
+
+
+  }
+
+  @media screen and (max-width: 768px) {
+    .body-n {
+      padding-bottom: 550px !important;
+    }
+
+    .tracklist-n {
+      padding-left: 10px !important;
+      margin-left: 0px !important;
+      font-size: 2rem !important;
+      overflow: visible;
+
+
+    }
+
+    .album-n {
+      display: flex;
+      justify-content: center;
+
+
+      width: 100%;
+      min-width: 300px;
+      padding-left: 0px !important;
+      padding-right: 0px !important;
+      margin-left: 0px !important;
+      margin-right: 0px !important;
+
+    }
+
+    #img-album-n {
+
+      min-width: 280px;
+
+    }
+
+  }
+
+  /*--------------------------------------------*/
+  /*--------------Album Page End-------------------*/
