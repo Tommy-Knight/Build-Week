@@ -1,11 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Prompt:ital@0;1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap");
+@font-face {
+  font-family: "spotifyfont";
+  src: url("spotifyfont-webfont.woff2") format("woff2"),
+    url("spotifyfont-webfont.woff") format("woff");
+}
+
 body {
   background: linear-gradient(120deg, #30517a, #191414);
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  font-family: "spotifyfont";
 }
 
 .tile-title {
@@ -26,7 +33,7 @@ body {
 }
 .HomeContainer {
   color: white;
-  font-family: "Prompt", sans-serif;
+  font-family: "spotifyfont";
 }
 
 .HomeContainer h2 {
@@ -35,7 +42,7 @@ body {
 }
 
 .select-trends .btn {
-  font-family: "Prompt", sans-serif;
+  font-family: "spotifyfont";
   font-weight: 600;
   letter-spacing: 3px;
   font-size: 10px;
