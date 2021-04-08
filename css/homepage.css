@@ -10,6 +10,12 @@ body {
   background-attachment: fixed;
 }
 
+@font-face {
+  font-family: "spotifyfont";
+  src: url("spotifyfont-webfont.woff2") format("woff2"),
+    url("spotifyfont-webfont.woff") format("woff");
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 8px;
@@ -48,7 +54,8 @@ body {
 }
 .HomeContainer {
   color: white;
-  font-family: "Prompt", sans-serif;
+  font-family: spotifyfont;
+  border-top: 5px solid black;
 }
 
 .HomeContainer h2 {
@@ -57,13 +64,14 @@ body {
 }
 
 #collectionInfo {
-  font-family: "Lora", serif;
+  font-family: "spotifyfont";
   font-size: 14px;
   color: #c1c1c1;
+  font-weight: 100;
 }
 
 .select-trends .btn {
-  font-family: "Prompt", sans-serif;
+  font-family: spotifyfont;
   font-weight: 600;
   letter-spacing: 3px;
   font-size: 10px;
