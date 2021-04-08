@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Home</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-<<<<<<< Updated upstream
-<head>
-  <title>Home</title>
-  <!-- Required meta tags -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-=======
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -15,6 +16,7 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <!-- Note that this is a old bootstrap, load 4.6-->
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
@@ -23,80 +25,54 @@
     />
     <link rel="stylesheet" href="navbar.css" />
     <link rel="stylesheet" href="css/style-L.css" />
-    <link
-      rel="icon"
-      type="image/png"
-      href="https://icons-for-free.com/iconfiles/png/512/music+round+icon+spotify+icon-1320190507294268936.png"
-    />
-
-    <!--End of Links and Start of Body-->
   </head>
->>>>>>> Stashed changes
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-  <!-- Note that this is a old bootstrap, load 4.6-->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous" />
-  <link rel="stylesheet" href="navbar.css" />
-  <link rel="stylesheet" href="css/style-L.css" />
-</head>
+  <body class="bodyClass">
+    <iframe
+      src="./navbar.html"
+      width="100%"
+      height="100%"
+      onload="this.before((this.contentDocument.body));this.remove()"
+    ></iframe>
 
-<body class="bodyClass">
-  <iframe src="./navbar.html" width="100%" height="100%"
-    onload="this.before((this.contentDocument.body));this.remove()"></iframe>
-
-  <div class="HomeContainer container-fluid">
-    <div class="row">
-      <div class="col-md-4 col-lg-3 col-sm-2 px-sm-4"></div>
-      <div class="col-md-8 col-lg-8 col-sm-8 px-sm-4 mw-100">
-        <div id="HomePageNav">
-          <div class="row d-flex flex-wrap justify-content-center select-trends py-5">
-            <div class="col-md-2 col-sm-4 navOptions">
-              <button class="btn px-0 home-nav-btns activateButton shadow-none">
-                TRENDING
-              </button>
-            </div>
-            <div class="col-md-2 col-sm-4 navOptions">
-              <button class="btn px-0 home-nav-btns shadow-none">
-                PODCAST
-              </button>
-            </div>
-            <div class="col-md-3 col-sm-4 navOptions">
-              <button class="btn px-0 home-nav-btns shadow-none">
-                MOODS AND GENRES
-              </button>
-            </div>
-            <div class="col-md-2 col-sm-4 navOptions">
-              <button class="btn px-0 home-nav-btns shadow-none">
-                NEW RELEASES
-              </button>
-            </div>
-            <div class="col-md-2 col-sm-4 navOptions">
-              <button class="btn px-0 home-nav-btns shadow-none">
-                DISCOVER
-              </button>
-            </div>
-          </div>
-<<<<<<< Updated upstream
-        </div>
-        <h2>#THROWBACKTHURSDAY</h2>
-        <div class="row mt-4 mb-1 no-gutters">
-          <div class="col-xs-4 col-md-3 col-lg-2 col-sm-4 px-2">
-            <div class="tile-card">
-              <img src="assets/images/album-images/A_Collection_of_Beatles_Oldies.jpg" class="img-fluid rounded"
-                alt="" />
-              <!--BEFORE-->
-              <!--  <div class="tile-logo">
-=======
-          <div>
-            <h2 style="margin-bottom: 0px">#THROWBACKTHURSDAY</h2>
-            <span id="collectionInfo">
-              Non-stop music based on your favorite songs and artists</span
+    <div class="HomeContainer container-fluid">
+      <div class="row">
+        <div class="col-md-4 col-lg-3 col-sm-2 px-sm-4"></div>
+        <div class="col-md-8 col-lg-8 col-sm-8 px-sm-4 mw-100">
+          <div id="HomePageNav">
+            <div
+              class="row d-flex flex-wrap justify-content-center select-trends py-5"
             >
+              <div class="col-md-2 col-sm-4 navOptions">
+                <button
+                  class="btn px-0 home-nav-btns activateButton shadow-none"
+                >
+                  TRENDING
+                </button>
+              </div>
+              <div class="col-md-2 col-sm-4 navOptions">
+                <button class="btn px-0 home-nav-btns shadow-none">
+                  PODCAST
+                </button>
+              </div>
+              <div class="col-md-3 col-sm-4 navOptions">
+                <button class="btn px-0 home-nav-btns shadow-none">
+                  MOODS AND GENRES
+                </button>
+              </div>
+              <div class="col-md-2 col-sm-4 navOptions">
+                <button class="btn px-0 home-nav-btns shadow-none">
+                  NEW RELEASES
+                </button>
+              </div>
+              <div class="col-md-2 col-sm-4 navOptions">
+                <button class="btn px-0 home-nav-btns shadow-none">
+                  DISCOVER
+                </button>
+              </div>
+            </div>
           </div>
-
+          <h2>#THROWBACKTHURSDAY</h2>
           <div class="row mt-4 mb-1 no-gutters">
             <div class="col-xs-4 col-md-3 col-lg-2 col-sm-4 px-2">
               <div class="tile-card">
@@ -107,65 +83,64 @@
                 />
                 <!--BEFORE-->
                 <!--  <div class="tile-logo">
->>>>>>> Stashed changes
                 <i class="fab fa-spotify"></i>
               </div> -->
-              <div class="tile-title">Italian Karaoke</div>
+                <div class="tile-title">Italian Karaoke</div>
+              </div>
+            </div>
+            <div class="col-xs-4 col-md-3 col-lg-2 col-sm-4 px-2">
+              <div class="tile-card">
+                <img
+                  src="assets/images/album-images/A_Collection_of_Beatles_Oldies.jpg"
+                  class="img-fluid rounded"
+                  alt=""
+                />
+                <div class="tile-title">Lyricists</div>
+              </div>
+            </div>
+            <div class="col-xs-4 col-md-3 col-lg-2 col-sm-4 px-2">
+              <div class="tile-card">
+                <img
+                  src="assets/images/album-images/A_Collection_of_Beatles_Oldies.jpg"
+                  class="img-fluid rounded"
+                  alt=""
+                />
+                <div class="tile-title">English Frequent Rotation</div>
+              </div>
+            </div>
+            <div class="col-xs-4 col-md-3 col-lg-2 col-sm-4 px-2">
+              <div class="tile-card">
+                <img
+                  src="assets/images/album-images/A_Collection_of_Beatles_Oldies.jpg"
+                  class="img-fluid rounded"
+                  alt=""
+                />
+                <div class="tile-title">2000s English</div>
+              </div>
+            </div>
+            <div class="col-xs-4 col-md-3 col-lg-2 col-sm-4 px-2">
+              <div class="tile-card">
+                <img
+                  src="assets/images/album-images/A_Collection_of_Beatles_Oldies.jpg"
+                  class="img-fluid rounded"
+                  alt=""
+                />
+                <div class="tile-title">Cocktail Hour</div>
+              </div>
+            </div>
+            <div class="col-xs-4 col-md-3 col-lg-2 col-sm-4 px-2">
+              <div class="tile-card">
+                <img
+                  src="assets/images/album-images/A_Collection_of_Beatles_Oldies.jpg"
+                  class="img-fluid rounded"
+                  alt=""
+                />
+                <div class="tile-title">I Love My '90s Hip-Hop</div>
+              </div>
             </div>
           </div>
-          <div class="col-xs-4 col-md-3 col-lg-2 col-sm-4 px-2">
-            <div class="tile-card">
-              <img src="assets/images/album-images/A_Collection_of_Beatles_Oldies.jpg" class="img-fluid rounded"
-                alt="" />
-              <div class="tile-title">Lyricists</div>
-            </div>
-          </div>
-          <div class="col-xs-4 col-md-3 col-lg-2 col-sm-4 px-2">
-            <div class="tile-card">
-              <img src="assets/images/album-images/A_Collection_of_Beatles_Oldies.jpg" class="img-fluid rounded"
-                alt="" />
-              <div class="tile-title">English Frequent Rotation</div>
-            </div>
-          </div>
-          <div class="col-xs-4 col-md-3 col-lg-2 col-sm-4 px-2">
-            <div class="tile-card">
-              <img src="assets/images/album-images/A_Collection_of_Beatles_Oldies.jpg" class="img-fluid rounded"
-                alt="" />
-              <div class="tile-title">2000s English</div>
-            </div>
-          </div>
-          <div class="col-xs-4 col-md-3 col-lg-2 col-sm-4 px-2">
-            <div class="tile-card">
-              <img src="assets/images/album-images/A_Collection_of_Beatles_Oldies.jpg" class="img-fluid rounded"
-                alt="" />
-              <div class="tile-title">Cocktail Hour</div>
-            </div>
-          </div>
-          <div class="col-xs-4 col-md-3 col-lg-2 col-sm-4 px-2">
-            <div class="tile-card">
-              <img src="assets/images/album-images/A_Collection_of_Beatles_Oldies.jpg" class="img-fluid rounded"
-                alt="" />
-              <div class="tile-title">I Love My '90s Hip-Hop</div>
-            </div>
-          </div>
-<<<<<<< Updated upstream
-        </div>
-        <!--Row two with HEADING-->
-        <h2>Classics</h2>
-        <div class="row mt-4 mb-2 no-gutters">
-          <div class="col-xs-4 col-md-3 col-lg-2 col-sm-4 px-2">
-            <div class="tile-card">
-              <img src="assets/images/homepage-images/music2.jfif" class="img-fluid rounded" alt="" />
-              <div class="tile-title">Italian Karaoke</div>
-=======
           <!--Row two with HEADING-->
-          <div>
-            <h2 style="margin-bottom: 0px">Classics</h2>
-            <span id="collectionInfo">
-              Songs that fit everyone. The ultimate playlist for meetups's and
-              long road trips</span
-            >
-          </div>
+          <h2>Classics</h2>
           <div class="row mt-4 mb-2 no-gutters">
             <div class="col-xs-4 col-md-3 col-lg-2 col-sm-4 px-2">
               <div class="tile-card">
@@ -176,50 +151,49 @@
                 />
                 <div class="tile-title">Italian Karaoke</div>
               </div>
->>>>>>> Stashed changes
+            </div>
+            <div class="col-xs-4 col-md-3 col-lg-2 col-sm-4 px-2">
+              <div class="tile-card">
+                <img
+                  src="assets/images/homepage-images/music2.jfif"
+                  class="img-fluid rounded"
+                  alt=""
+                />
+                <div class="tile-title">Lyricists</div>
+              </div>
+            </div>
+            <div class="col-xs-4 col-md-3 col-lg-2 col-sm-4 px-2">
+              <div class="tile-card">
+                <img
+                  src="assets/images/homepage-images/music2.jfif"
+                  class="img-fluid rounded"
+                  alt=""
+                />
+                <div class="tile-title">English Frequent Rotation</div>
+              </div>
+            </div>
+            <div class="col-xs-4 col-md-3 col-lg-2 col-sm-4 px-2">
+              <div class="tile-card">
+                <img
+                  src="assets/images/homepage-images/music2.jfif"
+                  class="img-fluid rounded"
+                  alt=""
+                />
+                <div class="tile-title">2000s English</div>
+              </div>
+            </div>
+            <div class="col-xs-4 col-md-3 col-lg-2 col-sm-4 px-2">
+              <div class="tile-card">
+                <img
+                  src="assets/images/homepage-images/music2.jfif"
+                  class="img-fluid rounded"
+                  alt=""
+                />
+                <div class="tile-title">Cocktail Hour</div>
+              </div>
             </div>
           </div>
-          <div class="col-xs-4 col-md-3 col-lg-2 col-sm-4 px-2">
-            <div class="tile-card">
-              <img src="assets/images/homepage-images/music2.jfif" class="img-fluid rounded" alt="" />
-              <div class="tile-title">Lyricists</div>
-            </div>
-          </div>
-          <div class="col-xs-4 col-md-3 col-lg-2 col-sm-4 px-2">
-            <div class="tile-card">
-              <img src="assets/images/homepage-images/music2.jfif" class="img-fluid rounded" alt="" />
-              <div class="tile-title">English Frequent Rotation</div>
-            </div>
-          </div>
-          <div class="col-xs-4 col-md-3 col-lg-2 col-sm-4 px-2">
-            <div class="tile-card">
-              <img src="assets/images/homepage-images/music2.jfif" class="img-fluid rounded" alt="" />
-              <div class="tile-title">2000s English</div>
-            </div>
-          </div>
-          <div class="col-xs-4 col-md-3 col-lg-2 col-sm-4 px-2">
-            <div class="tile-card">
-              <img src="assets/images/homepage-images/music2.jfif" class="img-fluid rounded" alt="" />
-              <div class="tile-title">Cocktail Hour</div>
-            </div>
-          </div>
-<<<<<<< Updated upstream
-        </div>
-        <h2>DJ HITS' 2020</h2>
-        <div class="row mt-4 mb-2 no-gutters">
-          <div class="col-xs-4 col-md-3 col-lg-2 col-sm-4 px-2">
-            <div class="tile-card">
-              <img src="assets/images/album-images/A_Collection_of_Beatles_Oldies.jpg" class="img-fluid rounded"
-                alt="" />
-              <!--BEFORE-->
-              <!--  <div class="tile-logo">
-=======
-          <div>
-            <h2 style="margin-bottom: 0px">The Top Tracks & Artists of 2020</h2>
-            <span id="collectionInfo">
-              Dive deep into the ocean of Global top tracks and artists</span
-            >
-          </div>
+          <h2>DJ HITS' 2020</h2>
           <div class="row mt-4 mb-2 no-gutters">
             <div class="col-xs-4 col-md-3 col-lg-2 col-sm-4 px-2">
               <div class="tile-card">
@@ -230,65 +204,63 @@
                 />
                 <!--BEFORE-->
                 <!--  <div class="tile-logo">
->>>>>>> Stashed changes
                 <i class="fab fa-spotify"></i>
               </div> -->
-              <div class="tile-title">Italian Karaoke</div>
+                <div class="tile-title">Italian Karaoke</div>
+              </div>
+            </div>
+            <div class="col-xs-4 col-md-3 col-lg-2 col-sm-4 px-2">
+              <div class="tile-card">
+                <img
+                  src="assets/images/album-images/A_Collection_of_Beatles_Oldies.jpg"
+                  class="img-fluid rounded"
+                  alt=""
+                />
+                <div class="tile-title">Lyricists</div>
+              </div>
+            </div>
+            <div class="col-xs-4 col-md-3 col-lg-2 col-sm-4 px-2">
+              <div class="tile-card">
+                <img
+                  src="assets/images/album-images/A_Collection_of_Beatles_Oldies.jpg"
+                  class="img-fluid rounded"
+                  alt=""
+                />
+                <div class="tile-title">English Frequent Rotation</div>
+              </div>
+            </div>
+            <div class="col-xs-4 col-md-3 col-lg-2 col-sm-4 px-2">
+              <div class="tile-card">
+                <img
+                  src="assets/images/album-images/A_Collection_of_Beatles_Oldies.jpg"
+                  class="img-fluid rounded"
+                  alt=""
+                />
+                <div class="tile-title">2000s English</div>
+              </div>
+            </div>
+            <div class="col-xs-4 col-md-3 col-lg-2 col-sm-4 px-2">
+              <div class="tile-card">
+                <img
+                  src="assets/images/album-images/A_Collection_of_Beatles_Oldies.jpg"
+                  class="img-fluid rounded"
+                  alt=""
+                />
+                <div class="tile-title">Cocktail Hour</div>
+              </div>
+            </div>
+            <div class="col-xs-4 col-md-3 col-lg-2 col-sm-4 px-2">
+              <div class="tile-card">
+                <img
+                  src="assets/images/album-images/A_Collection_of_Beatles_Oldies.jpg"
+                  class="img-fluid rounded"
+                  alt=""
+                />
+                <div class="tile-title">I Love My '90s Hip-Hop</div>
+              </div>
             </div>
           </div>
-          <div class="col-xs-4 col-md-3 col-lg-2 col-sm-4 px-2">
-            <div class="tile-card">
-              <img src="assets/images/album-images/A_Collection_of_Beatles_Oldies.jpg" class="img-fluid rounded"
-                alt="" />
-              <div class="tile-title">Lyricists</div>
-            </div>
-          </div>
-          <div class="col-xs-4 col-md-3 col-lg-2 col-sm-4 px-2">
-            <div class="tile-card">
-              <img src="assets/images/album-images/A_Collection_of_Beatles_Oldies.jpg" class="img-fluid rounded"
-                alt="" />
-              <div class="tile-title">English Frequent Rotation</div>
-            </div>
-          </div>
-          <div class="col-xs-4 col-md-3 col-lg-2 col-sm-4 px-2">
-            <div class="tile-card">
-              <img src="assets/images/album-images/A_Collection_of_Beatles_Oldies.jpg" class="img-fluid rounded"
-                alt="" />
-              <div class="tile-title">2000s English</div>
-            </div>
-          </div>
-          <div class="col-xs-4 col-md-3 col-lg-2 col-sm-4 px-2">
-            <div class="tile-card">
-              <img src="assets/images/album-images/A_Collection_of_Beatles_Oldies.jpg" class="img-fluid rounded"
-                alt="" />
-              <div class="tile-title">Cocktail Hour</div>
-            </div>
-          </div>
-          <div class="col-xs-4 col-md-3 col-lg-2 col-sm-4 px-2">
-            <div class="tile-card">
-              <img src="assets/images/album-images/A_Collection_of_Beatles_Oldies.jpg" class="img-fluid rounded"
-                alt="" />
-              <div class="tile-title">I Love My '90s Hip-Hop</div>
-            </div>
-          </div>
-<<<<<<< Updated upstream
-        </div>
-        <h2>DJ HITS' 2020</h2>
-        <div class="row mt-4 mb-2 no-gutters">
-          <div class="col-xs-4 col-md-3 col-lg-2 col-sm-4 px-2">
-            <div class="tile-card">
-              <img src="assets/images/album-images/A_Collection_of_Beatles_Oldies.jpg" class="img-fluid rounded"
-                alt="" />
-              <!--BEFORE-->
-              <!--  <div class="tile-logo">
-=======
-          <div>
-            <h2 style="margin-bottom: 0px">Ultimate DJ HITS</h2>
-            <span id="collectionInfo"
-              >House, EDM & Dance Remixes of hit songs for clubs and
-              nightouts!</span
-            >
-          </div>
+          <h2>DJ HITS' 2020</h2>
           <div class="row mt-4 mb-2 no-gutters">
             <div class="col-xs-4 col-md-3 col-lg-2 col-sm-4 px-2">
               <div class="tile-card">
@@ -299,64 +271,83 @@
                 />
                 <!--BEFORE-->
                 <!--  <div class="tile-logo">
->>>>>>> Stashed changes
                 <i class="fab fa-spotify"></i>
               </div> -->
-              <div class="tile-title">Italian Karaoke</div>
+                <div class="tile-title">Italian Karaoke</div>
+              </div>
             </div>
-          </div>
-          <div class="col-xs-4 col-md-3 col-lg-2 col-sm-4 px-2">
-            <div class="tile-card">
-              <img src="assets/images/album-images/A_Collection_of_Beatles_Oldies.jpg" class="img-fluid rounded"
-                alt="" />
-              <div class="tile-title">Lyricists</div>
+            <div class="col-xs-4 col-md-3 col-lg-2 col-sm-4 px-2">
+              <div class="tile-card">
+                <img
+                  src="assets/images/album-images/A_Collection_of_Beatles_Oldies.jpg"
+                  class="img-fluid rounded"
+                  alt=""
+                />
+                <div class="tile-title">Lyricists</div>
+              </div>
             </div>
-          </div>
-          <div class="col-xs-4 col-md-3 col-lg-2 col-sm-4 px-2">
-            <div class="tile-card">
-              <img src="assets/images/album-images/A_Collection_of_Beatles_Oldies.jpg" class="img-fluid rounded"
-                alt="" />
-              <div class="tile-title">English Frequent Rotation</div>
+            <div class="col-xs-4 col-md-3 col-lg-2 col-sm-4 px-2">
+              <div class="tile-card">
+                <img
+                  src="assets/images/album-images/A_Collection_of_Beatles_Oldies.jpg"
+                  class="img-fluid rounded"
+                  alt=""
+                />
+                <div class="tile-title">English Frequent Rotation</div>
+              </div>
             </div>
-          </div>
-          <div class="col-xs-4 col-md-3 col-lg-2 col-sm-4 px-2">
-            <div class="tile-card">
-              <img src="assets/images/album-images/A_Collection_of_Beatles_Oldies.jpg" class="img-fluid rounded"
-                alt="" />
-              <div class="tile-title">2000s English</div>
+            <div class="col-xs-4 col-md-3 col-lg-2 col-sm-4 px-2">
+              <div class="tile-card">
+                <img
+                  src="assets/images/album-images/A_Collection_of_Beatles_Oldies.jpg"
+                  class="img-fluid rounded"
+                  alt=""
+                />
+                <div class="tile-title">2000s English</div>
+              </div>
             </div>
-          </div>
-          <div class="col-xs-4 col-md-3 col-lg-2 col-sm-4 px-2">
-            <div class="tile-card">
-              <img src="assets/images/album-images/A_Collection_of_Beatles_Oldies.jpg" class="img-fluid rounded"
-                alt="" />
-              <div class="tile-title">Cocktail Hour</div>
+            <div class="col-xs-4 col-md-3 col-lg-2 col-sm-4 px-2">
+              <div class="tile-card">
+                <img
+                  src="assets/images/album-images/A_Collection_of_Beatles_Oldies.jpg"
+                  class="img-fluid rounded"
+                  alt=""
+                />
+                <div class="tile-title">Cocktail Hour</div>
+              </div>
             </div>
-          </div>
-          <div class="col-xs-4 col-md-3 col-lg-2 col-sm-4 px-2">
-            <div class="tile-card">
-              <img src="assets/images/album-images/A_Collection_of_Beatles_Oldies.jpg" class="img-fluid rounded"
-                alt="" />
-              <div class="tile-title">I Love My '90s Hip-Hop</div>
+            <div class="col-xs-4 col-md-3 col-lg-2 col-sm-4 px-2">
+              <div class="tile-card">
+                <img
+                  src="assets/images/album-images/A_Collection_of_Beatles_Oldies.jpg"
+                  class="img-fluid rounded"
+                  alt=""
+                />
+                <div class="tile-title">I Love My '90s Hip-Hop</div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-  <script src="assets/javaScript/HomePage.js"></script>
-</body>
-
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/javaScript/HomePage.js"></script>
+  </body>
 </html>
