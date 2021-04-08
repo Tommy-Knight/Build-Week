@@ -10,6 +10,30 @@ body {
   background-attachment: fixed;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+  color: black;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #1e212a;
+  border-radius: 5px;
+  background: #1e212a;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #2c476a;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #1e212a;
+}
+
 .tile-title {
   font-size: 12px;
   text-align: center;
