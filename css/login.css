@@ -280,9 +280,9 @@ li:nth-child(odd) {
   justify-content: center;
   padding-left: 270px !important;
   align-items: center;
-  justify-content: center;
   margin-top: -10%;
   right:0;
+  text-align: center;
 }
 
 .album-n p {
@@ -331,17 +331,13 @@ li:nth-child(odd) {
   #img-album-n {
     width: 100%;
     max-width: 500px;
-    position: relative;
-
   }
 
   .album-n {
-
     margin-right: -50px;
 
-
   }
-
+}
   @media screen and (max-width: 768px) {
     .body-n {
       padding-bottom: 550px !important;
@@ -352,28 +348,20 @@ li:nth-child(odd) {
       margin-left: 0px !important;
       font-size: 2rem !important;
       overflow: visible;
-
-
     }
 
     .album-n {
-      display: flex;
-      justify-content: center;
-
-
+     
       width: 100%;
       min-width: 300px;
-      padding-left: 0px !important;
-      padding-right: 0px !important;
+      padding-left: 20px !important;
       margin-left: 0px !important;
       margin-right: 0px !important;
-
+      text-align: center;
     }
 
     #img-album-n {
-
       min-width: 280px;
-
     }
 
   }
