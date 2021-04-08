@@ -17,6 +17,10 @@ body {
   letter-spacing: 1px;
 }
 
+.HomeContainer {
+  border-top: 5px solid black;
+}
+
 .justify-content-space-evenly {
   justify-content: center;
 }
@@ -35,12 +39,12 @@ body {
   font-weight: 600;
   letter-spacing: 3px;
   font-size: 10px;
-  color: white;
 }
 
 .tile-card {
   position: relative;
   transition: all 1s cubic-bezier(0.25, 0.1, 0.25, 1);
+  z-index: 2;
 }
 
 .tile-logo {
@@ -55,7 +59,7 @@ body {
 
 .tile-card:hover {
   transform: scale(1.3);
-  z-index: 1;
+  z-index: 9;
 }
 
 div.navOptions > button {
@@ -107,6 +111,14 @@ button.home-nav-btns:hover:after {
 @media all and (max-width: 575px) and (min-width: 100px) {
   .col-xs-4 {
     width: 50% !important;
+  }
+
+  #HomePageNav > div {
+    padding-top: 30px !important;
+  }
+
+  div.navOptions {
+    margin-bottom: 10px;
   }
 
   .HomeContainer h2 {
