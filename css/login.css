@@ -1,3 +1,12 @@
+@font-face {
+	font-family: "spotifyfont";
+	src: url("spotifyfont-webfont.woff2") format("woff2"),
+		url("spotifyfont-webfont.woff") format("woff");
+}
+
+body {
+  font-family: spotifyfont !important;
+}
 
 .spotify-container-n {
   display: flex;
@@ -283,22 +292,28 @@ box-shadow: inset 0 0 6px rgb(20, 20, 20);
 }
 /*--------Screen sizing for albumpage---------------*/
 
-@media screen and (max-width: 970px){
+@media screen and (max-width: 97920px){
   .tracklist-n { padding-left: 10px !important;
  }
  .body-n {
      overflow: visible;
  }
  #img-album-n {
-  max-width: 100%;
+  width: 100%; 
+  max-width:500px;
+  min-width: 200px;
+  position: relative;
+ 
 }
-
+.album-cover-n  {
+  padding-left:250px ;
+  margin-right: -50px;
+  
 }
 
 @media screen and (max-width: 768px) {
   .tracklist-n {
    
-    margin-left:  50px !important;
     padding-left: 10px;
     width: 700px !important;
     overflow: visible;
@@ -313,8 +328,7 @@ box-shadow: inset 0 0 6px rgb(20, 20, 20);
     padding-right: 0px;
     margin-left:  0px !important;
     margin-right:  0px !important;
-    
-    
+        
   }
 
   #img-album-n {
@@ -323,7 +337,6 @@ box-shadow: inset 0 0 6px rgb(20, 20, 20);
 
   }
   
-
 }
 /*--------------------------------------------*/
 /*--------------Album Page End-------------------*/
