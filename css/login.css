@@ -307,20 +307,14 @@ li:nth-child(odd) {
 /*--------Screen sizing for albumpage---------------*/
 @media screen and (max-width: 1024px) {
   .album-n {
-
-    border: red solid 1px;
     margin-right: -50px !important;
   }
 
-  .tracklist-n {
-    border: solid purple 1px;
-  }
 }
 
 @media screen and (max-width: 979px) {
   .tracklist-n {
     padding-left: 10px !important;
-    border: solid purple 1px;
   }
 
   .body-n {
