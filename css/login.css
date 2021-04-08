@@ -190,11 +190,14 @@ i {
 /* -------------------------- Album Page start ------------------------- */
 /*-only body of albumpage-*/
 .body-n {
+  background: no-repeat;
   background-color: #5d5d5d;
   background-image: linear-gradient(132deg, #202020 0%, #050505 95%);
-overflow: hidden;
-  max-height: 100vh;
-  /* margin-bottom: 100px !important; */
+  overflow: hidden;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  
 }
 
 .invisible-placeholder-n {
@@ -206,14 +209,13 @@ overflow: hidden;
 }
 
 ::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(200,200,200,1);
-  border-radius: 10px;
+box-shadow: inset 0 0 6px rgb(20, 20, 20);
+
 }
 
 ::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  background-color:#fff;
-  -webkit-box-shadow: inset 0 0 6px rgba(90,90,90,0.7);
+   background-color:rgb(22, 22, 22);
+ box-shadow: inset 0 0 6px rgba(90,90,90,0.7);
 }
 
   /*---------tracklist column-----------------*/
@@ -305,13 +307,21 @@ overflow: hidden;
   
   .album-cover-n  {
     width: 100%;
-    max-width: 350px;
-    padding-left: 30px;
+    min-width: 300px;
+    padding-left: 0px;
     padding-right: 0px;
-    margin-left: 10px !important;
-    margin: 0 !important;
+    margin-left:  0px !important;
+    margin-right:  0px !important;
+    
     
   }
+
+  #img-album-n {
+    max-width: 75%;
+    min-width: 280px;
+
+  }
+  
 
 }
 /*--------------------------------------------*/
