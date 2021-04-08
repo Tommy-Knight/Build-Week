@@ -10,6 +10,8 @@ body {
   color: white;
   background-color: rgb(34, 34, 34);
   font-family: spotifyfont;
+  margin-bottom: 110px;
+  margin-top: 0px;
 }
 
 
@@ -49,7 +51,7 @@ body {
   /* width: 500px; */
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
+  position: sticky;
 }
 
 a:hover {
