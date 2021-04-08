@@ -60,7 +60,7 @@ body {
 button.home-nav-btns::after {
   content: "";
 	position: absolute;
-	width: 100%;
+	width: 50%;
 	height: 3px;
 	bottom: -3.5px;
 	left: 26%;
