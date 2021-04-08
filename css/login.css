@@ -264,22 +264,22 @@ box-shadow: inset 0 0 6px rgb(20, 20, 20);
 .album-cover-n {
   border: red solid 2px;
 }
-
-#img-album-n {
-  max-width: 80%;
-}
-
-.album-n {
-  color: white;
-  text-align: center;
-}
-
-.album-n p {
-  margin-top: 10px;
-  color: #5d5d5d;
-  font-size: 12px;
-  font-weight: 700;
-}
+  
+  #img-album-n {
+    max-width: 100%;
+  }
+  
+  .album-n {
+    color: white;
+    text-align: center;
+  }
+  
+  .album-n p {
+    margin-top: 10px;
+    color: #5d5d5d;
+    font-size: 12px;
+    font-weight: 700;
+  }
 /*"play now button*/
 .album-n button {
   margin-top: 10px !important;
@@ -317,7 +317,6 @@ box-shadow: inset 0 0 6px rgb(20, 20, 20);
     padding-left: 10px;
     width: 700px !important;
     overflow: visible;
-    min-width: 300px;
    
   }
   

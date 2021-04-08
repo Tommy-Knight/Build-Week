@@ -1,7 +1,15 @@
+@font-face {
+	font-family: "spotifyfont";
+	src: url("spotifyfont-webfont.woff2") format("woff2"),
+		url("spotifyfont-webfont.woff") format("woff");
+}
+
+
+
 body {
   color: white;
   background-color: rgb(34, 34, 34);
-  font-family: sans-serif;
+  font-family: spotifyfont;
 }
 
 
@@ -46,7 +54,7 @@ body {
 
 a:hover {
   color: rgb(0, 189, 0);
-  text-decoration: underline;
+  
 }
 
 .list li a {
@@ -136,6 +144,3 @@ body > div.container > h3 {
 
 }
 
-h6 {
-    color: black;
-}
