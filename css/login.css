@@ -6,6 +6,7 @@
 
 body {
   font-family: spotifyfont !important;
+  width: 98%;
 }
 
 .spotify-container-n {
@@ -204,8 +205,6 @@ i {
   background-image: linear-gradient(132deg, #202020 0%, #050505 95%);
   overflow: hidden;
   height: 100%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   
 }
 
@@ -230,13 +229,11 @@ box-shadow: inset 0 0 6px rgb(20, 20, 20);
   /*---------tracklist column-----------------*/
   .tracklist-n {
     max-height: 100vh;
-    border:solid blueviolet 2px;
     padding-left: 2rem !important;
     margin-left: 50px !important;
     overflow-y: scroll;
     padding-bottom: 150px !important;
-    
-  }
+    }
   
   ul {
     padding-left: 20px;
@@ -261,9 +258,7 @@ box-shadow: inset 0 0 6px rgb(20, 20, 20);
   }
   /*------------album cover column-------------*/
  
-.album-cover-n {
-  border: red solid 2px;
-}
+
   
   #img-album-n {
     max-width: 100%;
@@ -292,16 +287,17 @@ box-shadow: inset 0 0 6px rgb(20, 20, 20);
 }
 /*--------Screen sizing for albumpage---------------*/
 
-@media screen and (max-width: 97920px){
+@media screen and (max-width: 979px){
   .tracklist-n { padding-left: 10px !important;
  }
  .body-n {
      overflow: visible;
+     margin-bottom: 190px !important;
  }
  #img-album-n {
   width: 100%; 
   max-width:500px;
-  min-width: 200px;
+
   position: relative;
  
 }
@@ -312,11 +308,16 @@ box-shadow: inset 0 0 6px rgb(20, 20, 20);
 }
 
 @media screen and (max-width: 768px) {
+.body-n{
+  padding-bottom: 550px !important;
+}
+
   .tracklist-n {
-   
-    padding-left: 10px;
+    padding-left: 20px !important;
+    margin-left: 0px !important;
     width: 700px !important;
     overflow: visible;
+   
    
   }
   
@@ -324,7 +325,7 @@ box-shadow: inset 0 0 6px rgb(20, 20, 20);
     width: 100%;
     min-width: 300px;
     padding-left: 0px;
-    padding-right: 0px;
+    padding-right: 0px !important;
     margin-left:  0px !important;
     margin-right:  0px !important;
         
