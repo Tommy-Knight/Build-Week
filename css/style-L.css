@@ -1,27 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Prompt:ital@0;1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
-
-@font-face {
-  font-family: "spotifyfont";
-  src: url("spotifyfont-webfont.woff2") format("woff2"),
-    url("spotifyfont-webfont.woff") format("woff");
-}
-
 body {
-  background: linear-gradient(120deg, #25466d, #050a10);
+  background: linear-gradient(120deg, #30517a, #191414);
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
-#collectionInfo {
-  font-size: 14px;
-  color: #c1c1c1 !important;
-  /* font-weight: lighter; */
-  font-family: "Nanum Gothic", sans-serif;
-}
 .tile-title {
   font-size: 12px;
   text-align: center;
@@ -31,16 +17,12 @@ body {
   letter-spacing: 1px;
 }
 
-.HomeContainer {
-  border-top: 5px solid black;
-}
-
 .justify-content-space-evenly {
   justify-content: center;
 }
 .HomeContainer {
   color: white;
-  font-family: "spotifyfont";
+  font-family: "Prompt", sans-serif;
 }
 
 .HomeContainer h2 {
@@ -49,16 +31,16 @@ body {
 }
 
 .select-trends .btn {
-  font-family: "spotifyfont";
+  font-family: "Prompt", sans-serif;
   font-weight: 600;
   letter-spacing: 3px;
   font-size: 10px;
+  color: white;
 }
 
 .tile-card {
   position: relative;
   transition: all 1s cubic-bezier(0.25, 0.1, 0.25, 1);
-  z-index: 2;
 }
 
 .tile-logo {
@@ -72,8 +54,8 @@ body {
 }
 
 .tile-card:hover {
-  transform: scale(1.2);
-  z-index: 9;
+  transform: scale(1.3);
+  z-index: 1;
 }
 
 div.navOptions > button {
@@ -125,14 +107,6 @@ button.home-nav-btns:hover:after {
 @media all and (max-width: 575px) and (min-width: 100px) {
   .col-xs-4 {
     width: 50% !important;
-  }
-
-  #HomePageNav > div {
-    padding-top: 30px !important;
-  }
-
-  div.navOptions {
-    margin-bottom: 10px;
   }
 
   .HomeContainer h2 {

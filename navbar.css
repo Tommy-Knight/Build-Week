@@ -128,8 +128,7 @@
 	input[type="range"] {
 		position: fixed !important;
 		right: -5px;
-		bottom: 100px;
-		width: 75px !important;
+		width: 80px !important;
 		transform: rotate(270deg);
 	}
 	input[type="range"] {
