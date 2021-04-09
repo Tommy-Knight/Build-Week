@@ -235,11 +235,19 @@ i {
 
 /*---------tracklist column-----------------*/
 .tracklist-n {
-  max-height: 100vh;
+  display: flex;
+  align-items: center;
+  height: 100vh;
   padding-left: 2rem !important;
   margin-left: 50px !important;
+
+
+}
+.track-container {
+  width: 100%;
   overflow-y: scroll;
-  padding-bottom: 150px !important;
+  height: 80vh;
+  padding-bottom: 190px !important;
 }
 
 ul {
@@ -273,12 +281,12 @@ li:nth-child(odd) {
 }
 
 .album-n {
+
   display: flex;
   color: white;
   justify-content: center;
   padding-left: 270px !important;
   align-items: center;
-  margin-top: -10%;
   right:0;
   text-align: center;
   height: 100vh;
@@ -343,8 +351,12 @@ li:nth-child(odd) {
       overflow: visible;
     }
 
+    .track-container {
+      overflow: visible;
+    }
+
     .album-n {
-     
+      height: 100%;
       width: 100%;
       min-width: 300px;
       padding-left: 20px !important;
