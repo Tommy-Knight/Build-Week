@@ -61,6 +61,7 @@ body {
 .HomeContainer h2 {
   font-weight: 600;
   font-size: 25px;
+  position: relative;
 }
 
 #collectionInfo {
@@ -90,8 +91,45 @@ body {
   left: 5px;
 }
 
-.tile-logo img {
-  height: 20px;
+.tile-card:hover i.playIcon {
+  animation: iconOpacity 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+}
+
+.tile-play {
+  position: absolute;
+  top: 60%;
+  right: 15px;
+}
+
+i.playIcon {
+  color: #1cb351;
+  font-size: 30px !important;
+  z-index: 15;
+  opacity: 0;
+}
+
+@keyframes iconOpacity {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.15;
+  }
+  15% {
+    opacity: 0.25;
+  }
+  20% {
+    opacity: 0.35;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .tile-card:hover {
@@ -136,7 +174,7 @@ button.home-nav-btns:hover:after {
   transform: scaleX(1);
 }
 
-.testing {
+.logoStyle {
   opacity: 0.7;
 }
 
@@ -145,14 +183,18 @@ button.home-nav-btns:hover:after {
   font-size: 11px !important;
 }
 
-@media all and (max-width: 575px) and (min-width: 100px) {
+@media all and (max-width: 575.98px) and (min-width: 100px) {
   .col-xs-4 {
     width: 50% !important;
   }
 
   .HomeContainer h2 {
     font-weight: 600;
-    font-size: 25px;
+    font-size: 20px;
+  }
+
+  #collectionInfo {
+    font-size: 12px;
   }
 
   .tile-card:hover {
@@ -162,12 +204,33 @@ button.home-nav-btns:hover:after {
   .HomeContainer {
     margin-bottom: 150px;
   }
+
+  /*  Play Icon */
+
+  .tile-play {
+    position: absolute;
+    top: 68%;
+    right: 15px;
+  }
+
+  i.playIcon {
+    color: #1cb351;
+    font-size: 30px !important;
+    z-index: 15;
+    opacity: 0;
+  }
 }
 
 @media all and (max-width: 767px) and (min-width: 576px) {
   .HomeContainer {
     margin-bottom: 150px;
   }
+  .HomeContainer h2 {
+    font-weight: 600;
+    font-size: 22px;
+  }
+
+  /*  Play Icon */
 }
 
 @media all and (max-width: 991px) and (min-width: 768px) {
@@ -179,5 +242,112 @@ button.home-nav-btns:hover:after {
 @media screen and (min-width: 992px) {
   .HomeContainer {
     margin-bottom: 100px;
+  }
+}
+
+@media all and (max-width: 768px) and (min-width: 576px) {
+  div.col-sm-2 {
+    max-width: 0;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  div.col-sm-8 {
+    min-width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .HomeContainer {
+    margin-bottom: 150px;
+  }
+}
+
+.testing {
+  position: relative;
+}
+
+div.newPlay {
+  position: absolute;
+  top: 80%;
+  left: 80%;
+  z-index: 10;
+  opacity: 0;
+  color: #1cb351;
+  font-size: 120%;
+}
+
+.tile-card:hover div.newPlay {
+  animation: iconOpacity 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+}
+
+@media all and (max-width: 1340px) and (min-width: 1200px) {
+  div.newPlay {
+    position: absolute;
+    top: 75%;
+    left: 80%;
+    z-index: 10;
+    opacity: 0;
+    color: #1cb351;
+    font-size: 120%;
+  }
+}
+
+@media all and (max-width: 1199.98px) and (min-width: 992px) {
+  div.newPlay {
+    position: absolute;
+    top: 72%;
+    left: 75%;
+    z-index: 10;
+    opacity: 0;
+    color: #1cb351;
+    font-size: 100%;
+  }
+}
+
+@media all and (max-width: 991.98px) and (min-width: 768px) {
+  div.newPlay {
+    position: absolute;
+    top: 75%;
+    left: 80%;
+    z-index: 10;
+    opacity: 0;
+    color: #1cb351;
+    font-size: 120%;
+  }
+}
+
+@media all and (max-width: 767.98px) and (min-width: 576px) {
+  div.newPlay {
+    position: absolute;
+    top: 80%;
+    left: 80%;
+    z-index: 10;
+    opacity: 0;
+    color: #1cb351;
+    font-size: 150%;
+  }
+}
+
+@media all and (max-width: 575.98px) and (min-width: 400px) {
+  div.newPlay {
+    position: absolute;
+    top: 82%;
+    left: 78%;
+    z-index: 10;
+    opacity: 0;
+    color: #1cb351;
+    font-size: 150%;
+  }
+}
+
+@media all and (max-width: 399.98px) and (min-width: 100px) {
+  div.newPlay {
+    position: absolute;
+    top: 78%;
+    left: 78%;
+    z-index: 10;
+    opacity: 0;
+    color: #1cb351;
+    font-size: 110%;
   }
 }

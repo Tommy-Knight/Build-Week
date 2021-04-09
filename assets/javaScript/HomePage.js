@@ -7,7 +7,7 @@ let tileTitle = document.querySelectorAll('.tile-title')
 for(let i=0; i<tileTitle.length;i++){
     let logoDiv = document.createElement('div')
     logoDiv.className = 'tile-logo'
-    logoDiv.innerHTML = `<i class="fab fa-spotify testing"></i>`
+    logoDiv.innerHTML = `<i class="fab fa-spotify logoStyle"></i>`
     tileTitle[i].parentNode.insertBefore(logoDiv,tileTitle[i])
     
 }
@@ -33,3 +33,31 @@ for (var i = 0; i < btns.length; i++) {
   });
 } 
 
+/* function insertPlayIcon(){
+
+
+let tileTitle = document.querySelectorAll('.tile-title')
+
+for(let i=0; i<tileTitle.length;i++){
+    let logoDiv = document.createElement('div')
+    logoDiv.className = 'tile-play'
+    logoDiv.innerHTML = `<i class="fas fa-play-circle playIcon"></i>`
+    tileTitle[i].parentNode.insertBefore(logoDiv,tileTitle[i])
+    
+}
+} */
+
+function insertPlayIcon(){
+
+
+let albumImages = document.getElementsByClassName('rounded')
+
+for(let i=0; i<albumImages.length;i++){
+    let iconDiv = document.createElement('div')
+    iconDiv.className = 'newPlay'
+    iconDiv.innerHTML = `<i class="fas fa-play-circle"></i>`
+    albumImages[i].after(iconDiv)
+}
+}
+
+insertPlayIcon()
