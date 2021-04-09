@@ -212,7 +212,8 @@ i {
   background-color: #5d5d5d;
   background-image: linear-gradient(132deg, #202020 0%, #050505 95%);
   overflow: hidden;
-}
+  padding-top: 10px;
+  }
 
 .invisible-placeholder-n {
   border: solid palegreen 2px;
@@ -235,8 +236,7 @@ i {
 
 /*---------tracklist column-----------------*/
 .tracklist-n {
-  display: flex;
-  align-items: center;
+
   height: 100vh;
   padding-left: 2rem !important;
   margin-left: 50px !important;
@@ -247,7 +247,9 @@ i {
   width: 100%;
   overflow-y: scroll;
   height: 80vh;
-  padding-bottom: 190px !important;
+
+
+
 }
 
 ul {
@@ -278,6 +280,7 @@ li:nth-child(odd) {
 #img-album-n {
   width: 100%;
   max-width: 500px;
+  margin-bottom: 10px;
 }
 
 .album-n {
@@ -285,8 +288,7 @@ li:nth-child(odd) {
   display: flex;
   color: white;
   justify-content: center;
-  padding-left: 270px !important;
-  align-items: center;
+  padding-left: 290px !important;
   right:0;
   text-align: center;
   height: 100vh;
@@ -326,7 +328,7 @@ li:nth-child(odd) {
 
   .body-n {
     overflow: visible;
-    margin-bottom: 190px !important;
+    
   }
 
   #img-album-n {
@@ -341,7 +343,8 @@ li:nth-child(odd) {
 }
   @media screen and (max-width: 768px) {
     .body-n {
-      padding-bottom: 550px !important;
+      padding-bottom: 0px !important;
+      height: 100%;
     }
 
     .tracklist-n {
@@ -349,6 +352,7 @@ li:nth-child(odd) {
       margin-left: 0px !important;
       font-size: 2rem !important;
       overflow: visible;
+      height: 100%;
     }
 
     .track-container {
