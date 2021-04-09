@@ -73,10 +73,15 @@
 	font-size: 16px !important;
 }
 .cookies {
+	color: grey!important;
 	display: flex !important;
 	justify-content: center;
 	font-size: 12px !important;
 	margin-left: 25px;
+	cursor: pointer;
+}
+.cookies:hover{
+	color: white!important;
 }
 .footer {
 	height: 100px;
@@ -121,6 +126,7 @@
 }
 .songartist{
 	margin-left: 1px;
+	margin-bottom: 15px;
 }
 
 @media only screen and (max-width: 768px) {
