@@ -351,3 +351,12 @@ div.newPlay {
     font-size: 110%;
   }
 }
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+img {
+  cursor: pointer;
+}
