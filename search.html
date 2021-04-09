@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Search | Spootify</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous" />
+    <link rel="stylesheet" href=".\css\navbar.css" />
+    <link rel="stylesheet" href="css/test.css" />
+    <link rel="icon" type="image/png"
+        href="https://icons-for-free.com/iconfiles/png/512/music+round+icon+spotify+icon-1320190507294268936.png" />
+
+    <!--End of Links and Start of Body-->
+</head>
+
+<body class="bodyClass">
+    <iframe src="./navbar.html" width="100%" height="100%"
+        onload="this.before((this.contentDocument.body));this.remove()"></iframe>
+
+    <div class="container">
+
+        <div class="form-outline" style="padding-top: 10px;">
+            <input id="search-input" type="search" id="form1" class="form-control"
+                style="color: rgba(128, 128, 128, 0.445); border-radius: 25px;  width: 300px; display: inline-block"
+                value="Artist, songs,or podcast..." />
+            <button id="search-button" type="button" class="btn btn-dark"
+                style="height: 40px; background-color:black; border:0;">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+    </div>
+    <div style="height: 100px;"></div>
+
+
+    <!-- BROWSE ALL SECTION -->
+    <div class="container">
+        <h2 style="margin-bottom: 0px; margin-left: 10px;">Browse All</h2>
+        <div class="row mt-4 mb-1 no-gutters">
+            <div class="col-6 col-sm-6 col-md-4 col-lg-2 px-2">
+                <div class="tile-card">
+                    <img src="assets/images/icons/podcastsearch.png" class="img-fluid rounded" alt="" />
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-4 col-lg-2 px-2">
+                <div class="tile-card">
+                    <img src="assets/images/icons/madeforyou.png" class="img-fluid rounded" alt="" />
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-4 col-lg-2 px-2">
+                <div class="tile-card">
+                    <img src="assets/images/icons/charts.png" class="img-fluid rounded" alt="" />
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-4 col-lg-2 px-2">
+                <div class="tile-card">
+                    <img src="assets/images/icons/newreleases.png" class="img-fluid rounded" alt="" />
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-4 col-lg-2 px-2">
+                <div class="tile-card">
+                    <img src="assets/images/icons/discover.png" class="img-fluid rounded" alt="" />
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-4 col-lg-2 px-2">
+                <div class="tile-card">
+                    <img src="assets/images/icons/concerts.png" class="img-fluid rounded" alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END OF BROWSE ALL -->
+
+    <div style="height: 100px;"></div>
+
+    <div class="container">
+        <h2 style="margin-bottom: 0px; margin-left: 18px;">Your Favourites</h2>
+        <div class="row">
+            <div class="col-12 col-sm-6">
+                <div class="toppic mx-2">
+                    <img src="assets/images/icons/toprock.png" " class=" img-fluid rounded mx-2" alt="Rock" />
+                </div>
+            </div>
+            <div class="col-12 col-sm-6">
+                <div class="toppic mx-0">
+                    <img src="assets/images/icons/topindie.png" " class=" img-fluid rounded mx-2" alt="Indie" />
+                </div>
+            </div>
+            <div class="col-12 col-sm-6">
+                <div class="toppic mx-2">
+                    <img src="assets/images/icons/topdance.png" " class=" img-fluid rounded mx-2" alt="Dance" />
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 ">
+                <div class="toppic mx-2">
+                    <img src="assets/images/icons/toppop.png" class="img-fluid rounded" alt="Pop" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div style="height: 180px;"></div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="assets/javaScript/HomePage.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
