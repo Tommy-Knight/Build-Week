@@ -7,7 +7,6 @@
 body {
   font-family: spotifyfont !important;
   width: 98%;
-
 }
 
 .spotify-container-n {
@@ -249,9 +248,6 @@ i {
   width: 100%;
   overflow-y: scroll;
   height: 80vh;
-
-
-
 }
 
 ul {
@@ -272,8 +268,9 @@ li:nth-child(even) {
 
 li:nth-child(odd) {
   color: #fff;
-  font-weight: 500;
-  font-size: 15px;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  font-weight: lighter;
   margin: 0;
 }
 
@@ -283,6 +280,9 @@ li:nth-child(odd) {
   width: 100%;
   max-width: 500px;
   margin-bottom: 10px;
+}
+.album-n h4 {
+  letter-spacing: 1px;
 }
 
 .album-n {
@@ -321,6 +321,9 @@ li:nth-child(odd) {
     margin-right: -50px;
   }
 
+}
+.body-n {
+  height: 50%;
 }
 
 @media screen and (max-width: 979px) {
