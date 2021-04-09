@@ -73,15 +73,15 @@
 	font-size: 16px !important;
 }
 .cookies {
-	color: grey!important;
+	color: grey !important;
 	display: flex !important;
 	justify-content: center;
 	font-size: 12px !important;
 	margin-left: 25px;
 	cursor: pointer;
 }
-.cookies:hover{
-	color: white!important;
+.cookies:hover {
+	color: white !important;
 }
 .footer {
 	height: 100px;
@@ -92,12 +92,19 @@
 	font-size: 10px;
 	font-family: spotifyfont;
 }
-.playbutton{
-	color: white!important;
+.currentalbumart {
+	height: 75px;
+	width: 75px;
+}
+.playbutton {
+	color: white !important;
 	font-size: 25px;
 	margin-top: 7px;
 }
-.shuffleicon{
+.playbutton:hover {
+	font-size: 27px;
+}
+.shuffleicon {
 	padding-top: 4px;
 }
 .bottomIcon {
@@ -124,9 +131,10 @@
 	align-items: center;
 	justify-content: flex-end;
 }
-.songartist{
+.songartist {
 	margin-left: 1px;
 	margin-bottom: 15px;
+	color: rgb(173, 173, 173);
 }
 
 @media only screen and (max-width: 768px) {
@@ -142,7 +150,7 @@
 	input[type="range"] {
 		position: fixed !important;
 		right: -5px;
-		width: 80px !important;
+		width: 69px !important;
 		transform: rotate(270deg);
 	}
 	input[type="range"] {
