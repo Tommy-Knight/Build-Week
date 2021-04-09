@@ -208,11 +208,15 @@ i {
 /* -------------------------- Album Page start ------------------------- */
 /*-only body of albumpage-*/
 .body-n {
-  background:cover  ;
+
   background-color: #5d5d5d;
   background-image: linear-gradient(132deg, #202020 0%, #050505 95%);
   overflow: hidden;
   padding-top: 10px;
+  width: 100%;
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   }
 
 .invisible-placeholder-n {
@@ -236,11 +240,9 @@ i {
 
 /*---------tracklist column-----------------*/
 .tracklist-n {
-
   height: 100vh;
-  padding-left: 2rem !important;
-  margin-left: 50px !important;
-
+  padding-left: 2rem;
+  margin-left: 50px ;
 
 }
 .track-container {
@@ -288,7 +290,7 @@ li:nth-child(odd) {
   display: flex;
   color: white;
   justify-content: center;
-  padding-left: 290px !important;
+  padding-left: 290px;
   right:0;
   text-align: center;
   height: 100vh;
@@ -316,20 +318,19 @@ li:nth-child(odd) {
 /*--------Screen sizing for albumpage---------------*/
 @media screen and (max-width: 1024px) {
   .album-n {
-    margin-right: -50px !important;
+    margin-right: -50px;
   }
 
 }
 
 @media screen and (max-width: 979px) {
   .tracklist-n {
-    padding-left: 10px !important;
+    padding-left: 10px;
   }
 
   .body-n {
     overflow: visible;
-    
-  }
+     }
 
   #img-album-n {
     width: 100%;
@@ -339,33 +340,42 @@ li:nth-child(odd) {
   .album-n {
     margin-right: -50px;
 
+
   }
 }
-  @media screen and (max-width: 768px) {
+
+@media screen and (max-width: 768px) {
+ .album-n {
+    padding-left: 5vw;
+    padding-right: 5vw;
+    }
+
+}
+
+  @media screen and (max-width: 767px) {
     .body-n {
-      padding-bottom: 0px !important;
-      height: 100%;
+      padding-right: 0px ;
+     
     }
 
     .tracklist-n {
-      padding-left: 10px !important;
-      margin-left: 0px !important;
+      padding-left: 10px;
+      margin-left: 0px ;
       font-size: 2rem !important;
-      overflow: visible;
+    
       height: 100%;
     }
 
     .track-container {
       overflow: visible;
+      height: 100%;
+      padding-bottom: 160px;
     }
 
     .album-n {
       height: 100%;
       width: 100%;
       min-width: 300px;
-      padding-left: 20px !important;
-      margin-left: 0px !important;
-      margin-right: 0px !important;
       text-align: center;
     }
 
