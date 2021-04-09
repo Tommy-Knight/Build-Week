@@ -92,10 +92,17 @@
 	font-size: 10px;
 	font-family: spotifyfont;
 }
+.currentalbumart{
+	height: 75px;
+	width: 75px;
+}
 .playbutton{
 	color: white!important;
 	font-size: 25px;
 	margin-top: 7px;
+}
+.playbutton:hover{
+font-size:27px;
 }
 .shuffleicon{
 	padding-top: 4px;
@@ -127,6 +134,7 @@
 .songartist{
 	margin-left: 1px;
 	margin-bottom: 15px;
+	color:rgb(173, 173, 173);
 }
 
 @media only screen and (max-width: 768px) {
