@@ -7,6 +7,7 @@
 body {
   font-family: spotifyfont !important;
   width: 98%;
+
 }
 
 .spotify-container-n {
@@ -144,7 +145,6 @@ i {
   height: 0;
   width: 0;
   padding-top: 50px;
-
 }
 
 /* Create a custom checkbox */
@@ -208,12 +208,10 @@ i {
 /* -------------------------- Album Page start ------------------------- */
 /*-only body of albumpage-*/
 .body-n {
-  background: no-repeat;
+  background:cover  ;
   background-color: #5d5d5d;
   background-image: linear-gradient(132deg, #202020 0%, #050505 95%);
   overflow: hidden;
-  height: 100%;
-
 }
 
 .invisible-placeholder-n {
@@ -283,6 +281,7 @@ li:nth-child(odd) {
   margin-top: -10%;
   right:0;
   text-align: center;
+  height: 100vh;
 }
 
 .album-n p {
